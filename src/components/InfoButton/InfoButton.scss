@@ -1,0 +1,14 @@
+.main_button-container {
+  padding-top: 20px;
+
+  .main_button {
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+} 
