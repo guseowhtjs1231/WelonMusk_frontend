@@ -26,13 +26,13 @@ const Home = () => (
             <InfoWrapper content='Model 3' text='지금 주문하기' />
           </section>
           <section className='section home__second'>
-            <NavbarMini />
+            <NavbarMini className='navnav' />
             <video
               className='bg-vid'
-              src={Video}
+              data-src={Video}
               type='video/mp4'
               autoPlay
-              loop
+              data-keepplaying
               muted
             />
             <div className='second__content'>
