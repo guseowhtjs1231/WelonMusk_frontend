@@ -13,16 +13,14 @@ const Home = () => {
         <InfoWrapper content='Model 3' text='지금 주문하기' />
       </section>
       <section className='home__second'>
-        <div className='video-wrap'>
-          <video
-            className='bg-vid'
-            src={Video}
-            type='video/mp4'
-            autoPlay
-            loop
-            muted
-          />
-        </div>
+        <video
+          className='bg-vid'
+          src={Video}
+          type='video/mp4'
+          autoPlay
+          loop
+          muted
+        />
         <div className='second__content'>
           <InfoWrapper content='Tesla 알아보기' text='시승 신청' />
         </div>
