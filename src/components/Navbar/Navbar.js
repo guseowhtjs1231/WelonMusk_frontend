@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { MdMenu } from 'react-icons/md'
+// import { MdMenu } from 'react-icons/md'
 import LogoImg from '../../img/main_logo.svg'
 import './Navbar.scss'
 
@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className='navbar-right'>
         <Link to='/'>로그인</Link>
         <Link to='/'>
-          <MdMenu class='navbar-right__hamburger' />
+          <i class='fas fa-bars'></i>
         </Link>
       </div>
     </div>

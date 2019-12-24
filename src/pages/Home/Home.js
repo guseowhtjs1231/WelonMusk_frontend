@@ -33,6 +33,7 @@ const Home = () => (
               type='video/mp4'
               autoPlay
               data-keepplaying
+              loop
               muted
             />
             <div className='second__content'>
