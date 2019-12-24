@@ -8,7 +8,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='navbar-left'>
-        <Link to='/'><img src={LogoImg} alt='tesla_logo' /></Link>
+        <Link to='/'>
+          <img src={LogoImg} alt='tesla_logo' />
+        </Link>
       </div>
       <div className='navbar-center'>
         <Link to='/'>MODEL S</Link>
@@ -21,7 +23,9 @@ const Navbar = () => {
       </div>
       <div className='navbar-right'>
         <Link to='/'>로그인</Link>
-        <Link to='/'><MdMenu class='navbar-right__hamburger' /></Link>
+        <Link to='/'>
+          <MdMenu class='navbar-right__hamburger' />
+        </Link>
       </div>
     </div>
   )

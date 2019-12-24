@@ -6,9 +6,18 @@
     height: 40px;
     border-radius: 25px;
     font-size: 12px;
+    border-style: none;
 
     &:hover {
       cursor: pointer;
     }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
-} 
+}
