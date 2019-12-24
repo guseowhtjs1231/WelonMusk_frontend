@@ -1,4 +1,7 @@
 .Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,7 +16,7 @@
     font-size: 12px;
   }
 
-  ol {
+  ul {
     list-style: none;
 
     li {

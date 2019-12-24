@@ -8,7 +8,7 @@
   height: 100vh;
   background-size: 100%;
   background-position-y: 55%;
-  animation: zoomIn 0.7s ease-out forwards;
+  animation: zoomIn 10s ease forwards;
   animation-delay: 1s;
 }
 
@@ -39,14 +39,7 @@
   background-image: url('../../img/main_last.jpg');
   background-size: cover;
   background-position: center;
-  height: 83vh;
-}
-
-.home__footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 17vh;
+  height: 100vh;
 }
 
 @keyframes zoomIn {
@@ -54,19 +47,24 @@
     background-position: 51% 55%;
     background-size: 100%;
   }
-  100% {
+  20% {
     background-position: 51% 55%;
     background-size: 200%;
   }
-}
-
-@keyframes moveToLeft {
-  0% {
+  40% {
+    background-position: 0% 55%;
+    background-size: 200%;
+  }
+  60% {
     background-position: 51% 55%;
     background-size: 200%;
   }
+  80% {
+    background-position: 100% 55%;
+    background-size: 200%;
+  }
   100% {
-    background-position: 5% 55%;
+    background-position: 51% 55%;
     background-size: 200%;
   }
 }

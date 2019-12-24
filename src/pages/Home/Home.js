@@ -47,9 +47,7 @@ const Home = () => (
           <section className='section home__last'>
             <NavbarMini />
             <InfoWrapper content='Model Y' text='자세히 알아보기' />
-          </section>
-          <section>
-            <Footer className='home__footer' />
+            <Footer />
           </section>
         </ReactFullpage.Wrapper>
       )
