@@ -1,0 +1,27 @@
+.navbarmini {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+
+  .navbarmini-left {
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .navbarmini-right {
+    width: 22px;
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+      transform: rotate(180deg);
+    }
+  }
+}
