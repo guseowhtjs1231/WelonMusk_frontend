@@ -7,6 +7,7 @@ import InfoButton from '../../components/InfoButton/InfoButton'
 import ButtonDown from '../../components/ButtonDown/ButtonDown'
 import Video from '../../videos/experience-hero-desktop.mp4'
 import Footer from '../../components/Footer/Footer'
+import { TOOLTIPS, ANCHORS } from './data'
 import ReactFullpage from '@fullpage/react-fullpage'
 import './Home.scss'
 
@@ -14,13 +15,8 @@ const Home = () => (
   <ReactFullpage
     verticalCentered={false}
     navigation={true}
-    anchors={['section1', 'section2', 'section3', 'section4']}
-    navigationTooltips={[
-      'TESLA',
-      'TESLA 알아보기',
-      '모든 전력을 공급',
-      'MODEL Y',
-    ]}
+    anchors={ANCHORS}
+    navigationTooltips={TOOLTIPS}
     showActiveTooltip={true}
     render={() => {
       return (
@@ -34,7 +30,7 @@ const Home = () => (
             <ButtonDown section='#section2' />
           </section>
           <section className='section home__second'>
-            <NavbarMini className='navnav' />
+            <NavbarMini />
             <video
               className='bg-vid'
               data-src={Video}
@@ -51,7 +47,7 @@ const Home = () => (
             <ButtonDown section='#section3' />
           </section>
           <section className='section home__third'>
-            <NavbarMini className='navnav' />
+            <NavbarMini />
             <div className='info__content'>
               <InfoHeader text='모든 전력을 공급' />
               <InfoSubHeader text='태양광과 Powerwall' />
@@ -60,7 +56,7 @@ const Home = () => (
             <ButtonDown section='#section4' />
           </section>
           <section className='section home__last'>
-            <NavbarMini className='navnav' />
+            <NavbarMini />
             <div className='info__content'>
               <InfoSubHeader text='Tesla' />
               <InfoHeader text='Model Y' />

@@ -1,4 +1,4 @@
-.navbarmini {
+.navbar-mini {
   position: sticky;
   display: flex;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   padding: 0 20px;
   font-size: 14px;
 
-  .navbarmini-left {
+  .navbar-mini__left {
     width: 100px;
 
     img {
@@ -15,7 +15,7 @@
     }
   }
 
-  .navbarmini-right {
+  .navbar-mini__right {
     width: 22px;
     margin-right: 10px;
 
