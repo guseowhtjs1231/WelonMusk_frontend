@@ -4,6 +4,7 @@ import NavbarMini from '../../components/NavbarMini/NavbarMini'
 import InfoHeader from '../../components/InfoHeader/InfoHeader'
 import InfoSubHeader from '../../components/InfoSubHeader/InfoSubHeader'
 import InfoButton from '../../components/InfoButton/InfoButton'
+import ButtonDown from '../../components/ButtonDown/ButtonDown'
 import Video from '../../videos/experience-hero-desktop.mp4'
 import Footer from '../../components/Footer/Footer'
 import ReactFullpage from '@fullpage/react-fullpage'
@@ -13,6 +14,7 @@ const Home = () => (
   <ReactFullpage
     verticalCentered={false}
     navigation={true}
+    anchors={['section1', 'section2', 'section3', 'section4']}
     navigationTooltips={[
       'TESLA',
       'TESLA 알아보기',
@@ -29,6 +31,7 @@ const Home = () => (
               <InfoHeader text='Model 3' />
               <InfoButton text='지금 주문하기' />
             </div>
+            <ButtonDown section='#section2' />
           </section>
           <section className='section home__second'>
             <NavbarMini className='navnav' />
@@ -45,6 +48,7 @@ const Home = () => (
               <InfoHeader text='Tesla 알아보기' />
               <InfoButton text='시승 신청' />
             </div>
+            <ButtonDown section='#section3' />
           </section>
           <section className='section home__third'>
             <NavbarMini className='navnav' />
@@ -53,6 +57,7 @@ const Home = () => (
               <InfoSubHeader text='태양광과 Powerwall' />
               <InfoButton text='자세히 알아보기' />
             </div>
+            <ButtonDown section='#section4' />
           </section>
           <section className='section home__last'>
             <NavbarMini className='navnav' />
