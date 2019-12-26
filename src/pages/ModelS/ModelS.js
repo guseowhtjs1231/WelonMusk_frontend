@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
-import InfoWrapper from '../../components/InfoWrapper/InfoWrapper'
+
 import ReactFullpage from '@fullpage/react-fullpage'
 import './ModelS.scss'
 
@@ -23,9 +23,8 @@ const ModelS = () => (
     render={() => {
       return (
         <ReactFullpage.Wrapper>
-          <section className='section'>
+          <section className='section models__first'>
             <Navbar />
-            <InfoWrapper content='Model S' text='' />
           </section>
           <section className='section'></section>
           <section className='section'></section>
