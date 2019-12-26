@@ -1,0 +1,26 @@
+.main_button-container {
+  padding-top: 20px;
+
+  .main_button {
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 12px;
+    border-style: none;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* x y blur color */
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:active {
+      transform: translateY(0px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

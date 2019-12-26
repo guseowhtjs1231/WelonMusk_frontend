@@ -1,0 +1,74 @@
+.logoImg {
+  position: sticky;
+  z-index: 1000;
+}
+
+.home__first {
+  background-image: url('../../img/main_first.jpg');
+  height: 100vh;
+  background-size: 100%;
+  background-position-y: 55%;
+  animation: zoomIn 10s ease forwards;
+  animation-delay: 1s;
+}
+
+.home__second {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.home__third {
+  background-image: url('../../img/main_third.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.home__last {
+  background-image: url('../../img/main_last.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@keyframes zoomIn {
+  0% {
+    background-position: 51% 55%;
+    background-size: 100%;
+  }
+  20% {
+    background-position: 51% 55%;
+    background-size: 200%;
+  }
+  40% {
+    background-position: 0% 55%;
+    background-size: 200%;
+  }
+  60% {
+    background-position: 51% 55%;
+    background-size: 200%;
+  }
+  80% {
+    background-position: 100% 55%;
+    background-size: 200%;
+  }
+  100% {
+    background-position: 51% 55%;
+    background-size: 200%;
+  }
+}
+
+span {
+  background: white !important;
+}
