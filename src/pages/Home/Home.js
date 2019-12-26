@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import NavbarMini from '../../components/NavbarMini/NavbarMini'
-import InfoWrapper from '../../components/InfoWrapper/InfoWrapper'
+import InfoHeader from '../../components/InfoHeader/InfoHeader'
+import InfoSubHeader from '../../components/InfoSubHeader/InfoSubHeader'
+import InfoButton from '../../components/InfoButton/InfoButton'
 import Video from '../../videos/experience-hero-desktop.mp4'
 import Footer from '../../components/Footer/Footer'
 import ReactFullpage from '@fullpage/react-fullpage'
@@ -23,7 +25,10 @@ const Home = () => (
         <ReactFullpage.Wrapper>
           <section className='section home__first'>
             <Navbar />
-            <InfoWrapper content='Model 3' text='지금 주문하기' />
+            <div className='info__content'>
+              <InfoHeader text='Model 3' />
+              <InfoButton text='지금 주문하기' />
+            </div>
           </section>
           <section className='section home__second'>
             <NavbarMini className='navnav' />
@@ -36,17 +41,26 @@ const Home = () => (
               loop
               muted
             />
-            <div className='second__content'>
-              <InfoWrapper content='Tesla 알아보기' text='시승 신청' />
+            <div className='info__content'>
+              <InfoHeader text='Tesla 알아보기' />
+              <InfoButton text='시승 신청' />
             </div>
           </section>
           <section className='section home__third'>
-            <NavbarMini />
-            <InfoWrapper content='모든 전력을 공급' text='자세히 알아보기' />
+            <NavbarMini className='navnav' />
+            <div className='info__content'>
+              <InfoHeader text='모든 전력을 공급' />
+              <InfoSubHeader text='태양광과 Powerwall' />
+              <InfoButton text='자세히 알아보기' />
+            </div>
           </section>
           <section className='section home__last'>
-            <NavbarMini />
-            <InfoWrapper content='Model Y' text='자세히 알아보기' />
+            <NavbarMini className='navnav' />
+            <div className='info__content'>
+              <InfoSubHeader text='Tesla' />
+              <InfoHeader text='Model Y' />
+              <InfoButton text='자세히 알아보기' />
+            </div>
             <Footer />
           </section>
         </ReactFullpage.Wrapper>
