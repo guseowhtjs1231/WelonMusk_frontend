@@ -1,12 +1,8 @@
-import React from 'react'
-import './InfoHeader.scss'
+import React from "react";
+import "./InfoHeader.scss";
 
 const InfoHeader = ({ content }) => {
-  return (
-    <div className='info-header'>
-      {content}
-    </div>
-  )
-}
+  return <div className="info-header">{content}</div>;
+};
 
-export default InfoHeader
+export default InfoHeader;

@@ -1,10 +1,5 @@
-.logoImg {
-  position: sticky;
-  z-index: 1000;
-}
-
 .home__first {
-  background-image: url('../../img/main_first.jpg');
+  background-image: url("../../img/main_first.jpg");
   height: 100vh;
   background-size: 100%;
   background-position-y: 55%;
@@ -29,14 +24,14 @@
 }
 
 .home__third {
-  background-image: url('../../img/main_third.jpg');
+  background-image: url("../../img/main_third.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
 .home__last {
-  background-image: url('../../img/main_last.jpg');
+  background-image: url("../../img/main_last.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
