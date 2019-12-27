@@ -6,13 +6,13 @@ import './NavbarMini.scss'
 
 const NavbarMini = () => {
   return (
-    <div className='navbarmini'>
-      <div className='navbarmini-left'>
+    <div className='navbar-mini'>
+      <div className='navbar-mini__left'>
         <Link to='/'>
           <img src={LogoImg} alt='tesla_logo' />
         </Link>
       </div>
-      <div className='navbarmini-right'>
+      <div className='navbar-mini__right'>
         <Link to='/'>
           <img src={ArrowImg} alt='arrow_img' />
         </Link>
