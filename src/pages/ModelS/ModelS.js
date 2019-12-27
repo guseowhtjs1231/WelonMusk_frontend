@@ -25,7 +25,7 @@ const ModelS = () => (
         <ReactFullpage.Wrapper>
           <section className="section models__first">
             <Navbar />
-            <InfoHeader content="Model S" />
+            <InfoHeader text="Model S" />
           </section>
           <section className="section"></section>
           <section className="section"></section>
