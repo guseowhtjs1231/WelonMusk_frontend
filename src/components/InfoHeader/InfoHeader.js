@@ -1,8 +1,8 @@
 import React from "react";
 import "./InfoHeader.scss";
 
-const InfoHeader = ({ content }) => {
-  return <div className="info-header">{content}</div>;
+const InfoHeader = ({ text }) => {
+  return <div className="info-header">{text}</div>;
 };
 
 export default InfoHeader;

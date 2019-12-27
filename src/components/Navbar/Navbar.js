@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className='navbar-right'>
         <Link to='/'>로그인</Link>
         <Link to='/'>
-          <i class='fas fa-bars'></i>
+          <i className='fas fa-bars'></i>
         </Link>
       </div>
     </div>
