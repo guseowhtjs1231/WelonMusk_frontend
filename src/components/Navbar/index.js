@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { MdMenu } from 'react-icons/md'
 import LogoImg from "../../img/main_logo.svg";
-import "./Navbar.scss";
+import "./index.scss";
 
 const Navbar = () => {
   return (

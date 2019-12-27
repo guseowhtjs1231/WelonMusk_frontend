@@ -1,5 +1,5 @@
 import React from "react";
-import "./InfoButton.scss";
+import "./index.scss";
 
 const InfoButton = ({ text }) => {
   return (

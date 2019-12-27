@@ -1,6 +1,6 @@
 import React from "react";
 import BtnDown from "../../img/button_down.svg";
-import "./ButtonDown.scss";
+import "./index.scss";
 
 const ButtonDown = ({ section }) => {
   return (

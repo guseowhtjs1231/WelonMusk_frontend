@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LogoImg from "../../img/main_logo.svg";
 import ArrowImg from "../../img/button_down.svg";
-import "./NavbarMini.scss";
+import "./index.scss";
 
 const NavbarMini = () => {
   return (

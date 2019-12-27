@@ -1,8 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "./ModelS.scss";
-import InfoHeader from "../../components/InfoHeader/InfoHeader";
+import InfoHeader from "../../components/InfoHeader";
+import InfoSubHeader from "../../components/InfoSubHeader";
+import "../../styles/common.scss";
+import "./index.scss";
 
 const ModelS = () => (
   <ReactFullpage
@@ -25,7 +27,10 @@ const ModelS = () => (
         <ReactFullpage.Wrapper>
           <section className="section models__first">
             <Navbar />
-            <InfoHeader text="Model S" />
+            <div className="info__content">
+              <InfoSubHeader text="Tesla" />
+              <InfoHeader text="Model S" />
+            </div>
           </section>
           <section className="section"></section>
           <section className="section"></section>

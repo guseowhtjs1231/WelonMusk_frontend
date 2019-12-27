@@ -1,5 +1,5 @@
 import React from "react";
-import "./InfoHeader.scss";
+import "./index.scss";
 
 const InfoHeader = ({ text }) => {
   return <div className="info-header">{text}</div>;

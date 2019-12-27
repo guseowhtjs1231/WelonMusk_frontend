@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import NavbarMini from "../../components/NavbarMini/NavbarMini";
-import InfoHeader from "../../components/InfoHeader/InfoHeader";
-import InfoSubHeader from "../../components/InfoSubHeader/InfoSubHeader";
-import InfoButton from "../../components/InfoButton/InfoButton";
-import ButtonDown from "../../components/ButtonDown/ButtonDown";
+import Navbar from "../../components/Navbar";
+import NavbarMini from "../../components/NavbarMini";
+import InfoHeader from "../../components/InfoHeader";
+import InfoSubHeader from "../../components/InfoSubHeader";
+import InfoButton from "../../components/InfoButton";
+import ButtonDown from "../../components/ButtonDown";
 import Video from "../../videos/experience-hero-desktop.mp4";
-import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer";
 import { TOOLTIPS, ANCHORS } from "./data";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "./Home.scss";
+import "./index.scss";
 
 const Home = () => {
   // const [mouseDownPosX, setMouseDownPosX] = useState(0);
