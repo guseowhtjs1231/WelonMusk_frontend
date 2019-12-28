@@ -1,12 +1,11 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import NavbarMiniWhite from "../../components/NavbarMiniWhite";
 import NavbarMiniBlack from "../../components/NavbarMiniBlack";
 import ReactFullpage from "@fullpage/react-fullpage";
 import InfoHeader from "../../components/InfoHeader";
 import InfoSubHeader from "../../components/InfoSubHeader";
-import ButtonDownWhite from "../../components/ButtonDownWhite";
 import ButtonDownBlack from "../../components/ButtonDownBlack";
+import DetailsAndOrder from "../../components/DetailsAndOrder";
 import OuterFrame from "../../img/ModelS/speedometer/outerframe.svg";
 import { TOOLTIPS, ANCHORS, MODELS_INFO } from "./data";
 import "../../styles/common.scss";
@@ -93,6 +92,7 @@ const ModelS = () => (
                     탑재된 배터리 팩으로 탁월한 충격 보호를 제공합니다.
                   </p>
                 </div>
+                <DetailsAndOrder />
               </div>
               <div className="second__right">
                 <div className="right__car-img"></div>
