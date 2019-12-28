@@ -1,15 +1,34 @@
-.logoImg {
-  position: sticky;
-  z-index: 1000;
+.info__content {
+  text-align: center;
+  padding-top: 90px;
 }
 
 .home__first {
-  background-image: url('../../img/main_first.jpg');
   height: 100vh;
-  background-size: 100%;
-  background-position-y: 55%;
-  animation: zoomIn 10s ease forwards;
-  animation-delay: 1s;
+
+  .home__first__inner {
+    height: 100%;
+    background-image: url("../../img/main_first.jpg");
+    background-size: 100%;
+    background-position-y: 55%;
+    animation: zoomIn 10s ease forwards;
+    animation-delay: 1s;
+  }
+
+  // &.center {
+  //   background-position: 51% 55%;
+  //   background-size: 200%;
+  // }
+
+  // &.right {
+  //   background-position: 100% 55%;
+  //   background-size: 200%;
+  // }
+
+  // &.left {
+  //   background-position: 0% 55%;
+  //   background-size: 200%;
+  // }
 }
 
 .home__second {
@@ -29,14 +48,14 @@
 }
 
 .home__third {
-  background-image: url('../../img/main_third.jpg');
+  background-image: url("../../img/main_third.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
 .home__last {
-  background-image: url('../../img/main_last.jpg');
+  background-image: url("../../img/main_last.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -46,6 +65,10 @@
   0% {
     background-position: 51% 55%;
     background-size: 100%;
+  }
+  10% {
+    background-position: 51% 55%;
+    background-size: 200%;
   }
   20% {
     background-position: 51% 55%;
