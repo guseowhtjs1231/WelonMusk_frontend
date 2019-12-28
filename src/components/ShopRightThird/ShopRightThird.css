@@ -1,0 +1,124 @@
+.mainRight{
+    overflow: auto;
+    overflow-x: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    right: 1px;
+    margin-top: 75px;
+    height: 80vh;
+    align-items: center;
+    overflow-y: scroll;
+    
+}
+
+.select{
+    position: absolute;
+    width: 100%;
+    margin-top: 10%;
+    height: 80vh;
+}
+.selectTop{
+    position: absolute;
+    display: flex;
+    width: 85%;
+    height: 25%;
+    margin-left: 8%;
+   
+}
+
+.selectList{
+    position: absolute;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.colors{
+    position: absolute;
+    display: flex;
+    margin-top: 30px;
+}
+.paddingBlock{
+    padding-left: 10px;
+}
+.colorBorder{
+    display: flex;   
+    position: relative;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #007fff;
+    justify-content: center;
+}
+
+.color{
+    position: absolute;
+    margin-top: 3.5px;
+    width: 47px;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.colorNames{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: 85px;
+    align-items: center;
+   
+}
+
+
+.carColorName{
+    padding-left: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.vhgka{
+    margin-left: auto;
+    font-size: 13px;
+    color: #666666;
+}
+
+.textLorder{
+    position: relative;
+    width: 75%;
+    margin-top: 40%;
+    margin-left: 6%;
+}
+.textLorderLists{
+    width: 100%;
+}
+
+.textLorder p{
+    margin-left: 15px;
+    font-size: 13px;
+}
+.textLorderList{
+    padding-bottom: 18px;
+    font-size: 14px;
+    color: gray;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px  white; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bfbfbf; 
+    border-radius: 10px;
+  }
+  
+  

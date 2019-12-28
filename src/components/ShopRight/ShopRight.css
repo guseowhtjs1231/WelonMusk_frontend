@@ -1,11 +1,10 @@
-
 .mainRight{
     overflow: auto;
     overflow-x: hidden;
     position: fixed;
     display: flex;
     flex-direction: column;
-    width: 26%;
+    width: 27%;
     right: 1px;
     margin-top: 50px;
     height: 100vh;

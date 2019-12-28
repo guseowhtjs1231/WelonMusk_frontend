@@ -14,11 +14,10 @@ class Shop extends React.Component {
             <div className="Layout">
                 <ShopNav></ShopNav>
                 <div className="main">
-                <ShopMain></ShopMain>
-                <ShopRight></ShopRight>
-                </div>  
-               <ShopBottom></ShopBottom>
-                  
+                    <ShopMain></ShopMain>
+                    <ShopRight></ShopRight>
+                </div>
+                <ShopBottom></ShopBottom>
             </div>
         );
     }
