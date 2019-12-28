@@ -57,7 +57,7 @@ const Home = () => {
                 // onMouseUp={onMouseUp}
               >
                 <Navbar />
-                <div className="info__content">
+                <div className="main-header">
                   <InfoHeader text="Tesla" />
                   <InfoButton text="지금 주문하기" />
                 </div>
@@ -75,7 +75,7 @@ const Home = () => {
                 loop
                 muted
               />
-              <div className="info__content">
+              <div className="main-header">
                 <InfoHeader text="Tesla 알아보기" />
                 <InfoButton text="시승 신청" />
               </div>
@@ -83,7 +83,7 @@ const Home = () => {
             </section>
             <section className="section home__third">
               <NavbarMini />
-              <div className="info__content">
+              <div className="main-header">
                 <InfoHeader text="모든 전력을 공급" />
                 <InfoSubHeader text="태양광과 Powerwall" />
                 <InfoButton text="자세히 알아보기" />
@@ -92,7 +92,7 @@ const Home = () => {
             </section>
             <section className="section home__last">
               <NavbarMini />
-              <div className="info__content">
+              <div className="main-header">
                 <InfoSubHeader text="Tesla" />
                 <InfoHeader text="Model Y" />
                 <InfoButton text="자세히 알아보기" />
