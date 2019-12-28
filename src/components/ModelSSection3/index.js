@@ -44,7 +44,7 @@ const ModelSSection3 = () => {
                   </p>
                 </div>
               </div>
-              <div className="box fuel-efficiency">
+              <div className="box max-speed">
                 <div className="top">
                   <div>
                     <span className="txt-big">261</span>
