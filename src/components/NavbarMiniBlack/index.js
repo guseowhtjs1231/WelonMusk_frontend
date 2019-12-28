@@ -1,6 +1,6 @@
 import React from "react";
-import LogoImg from "../../img/main_logo.svg";
-import ArrowImg from "../../img/button_down.svg";
+import LogoImg from "../../img/main_logo_black.svg";
+import ArrowImg from "../../img/button_down_black.svg";
 import "./index.scss";
 
 const NavbarMini = () => {

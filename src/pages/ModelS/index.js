@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import NavbarMini from "../../components/NavbarMini";
+import NavbarMiniWhite from "../../components/NavbarMiniWhite";
+import NavbarMiniBlack from "../../components/NavbarMiniBlack";
 import ReactFullpage from "@fullpage/react-fullpage";
 import InfoHeader from "../../components/InfoHeader";
 import InfoSubHeader from "../../components/InfoSubHeader";
-import ButtonDown from "../../components/ButtonDown";
+import ButtonDownWhite from "../../components/ButtonDownWhite";
+import ButtonDownBlack from "../../components/ButtonDownBlack";
 import OuterFrame from "../../img/ModelS/speedometer/outerframe.svg";
 import { TOOLTIPS, ANCHORS, MODELS_INFO } from "./data";
 import "../../styles/common.scss";
@@ -76,14 +78,25 @@ const ModelS = () => (
                   </div>
                 </div>
               </div>
-              <ButtonDown section="#section2" />
+              <ButtonDownBlack section="#section2" />
             </div>
           </section>
           <section className="section models__second">
-            <NavbarMini />
+            <NavbarMiniBlack />
             <div className="second__inner-sections">
-              <div className="second__left"></div>
-              <div className="second__right"></div>
+              <div className="second__left">
+                <div className="left__info">
+                  <div className="info__header">안전</div>
+                  <div className="info__sub-header">높은 충격 보호</div>
+                  <p className="info__content">
+                    개발 단계부터 전기차로 제작된 Model S는 견고한 구조와 바닥에
+                    탑재된 배터리 팩으로 탁월한 충격 보호를 제공합니다.
+                  </p>
+                </div>
+              </div>
+              <div className="second__right">
+                <div className="right__car-img"></div>
+              </div>
             </div>
           </section>
           <section className="section"></section>

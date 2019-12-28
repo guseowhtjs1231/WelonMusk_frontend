@@ -1,5 +1,5 @@
 import React from "react";
-import BtnDown from "../../img/button_down.svg";
+import BtnDown from "../../img/button_down_white.svg";
 import "./index.scss";
 
 const ButtonDown = ({ section }) => {

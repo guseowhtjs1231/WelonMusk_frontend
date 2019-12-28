@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import NavbarMini from "../../components/NavbarMini";
+import NavbarMiniWhite from "../../components/NavbarMiniWhite";
 import InfoHeader from "../../components/InfoHeader";
 import InfoSubHeader from "../../components/InfoSubHeader";
 import InfoButton from "../../components/InfoButton";
-import ButtonDown from "../../components/ButtonDown";
+import ButtonDownWhite from "../../components/ButtonDownWhite";
 import Video from "../../videos/experience-hero-desktop.mp4";
 import Footer from "../../components/Footer";
 import { TOOLTIPS, ANCHORS } from "./data";
@@ -61,11 +61,11 @@ const Home = () => {
                   <InfoHeader text="Tesla" />
                   <InfoButton text="지금 주문하기" />
                 </div>
-                <ButtonDown section="#section2" />
+                <ButtonDownWhite section="#section2" />
               </div>
             </section>
             <section className="section home__second">
-              <NavbarMini />
+              <NavbarMiniWhite />
               <video
                 className="bg-vid"
                 data-src={Video}
@@ -79,19 +79,19 @@ const Home = () => {
                 <InfoHeader text="Tesla 알아보기" />
                 <InfoButton text="시승 신청" />
               </div>
-              <ButtonDown section="#section3" />
+              <ButtonDownWhite section="#section3" />
             </section>
             <section className="section home__third">
-              <NavbarMini />
+              <NavbarMiniWhite />
               <div className="main-header">
                 <InfoHeader text="모든 전력을 공급" />
                 <InfoSubHeader text="태양광과 Powerwall" />
                 <InfoButton text="자세히 알아보기" />
               </div>
-              <ButtonDown section="#section4" />
+              <ButtonDownWhite section="#section4" />
             </section>
             <section className="section home__last">
-              <NavbarMini />
+              <NavbarMiniWhite />
               <div className="main-header">
                 <InfoSubHeader text="Tesla" />
                 <InfoHeader text="Model Y" />
