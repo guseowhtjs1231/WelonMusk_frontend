@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import NavbarMini from "../../components/NavbarMini";
 import ReactFullpage from "@fullpage/react-fullpage";
 import InfoHeader from "../../components/InfoHeader";
 import InfoSubHeader from "../../components/InfoSubHeader";
@@ -13,6 +14,7 @@ const ModelS = () => (
   <ReactFullpage
     verticalCentered={false}
     navigation={true}
+    anchors={ANCHORS}
     navigationTooltips={TOOLTIPS}
     showActiveTooltip={true}
     render={() => {
@@ -77,7 +79,13 @@ const ModelS = () => (
               <ButtonDown section="#section2" />
             </div>
           </section>
-          <section className="section"></section>
+          <section className="section models__second">
+            <NavbarMini />
+            <div className="second__inner-sections">
+              <div className="second__left"></div>
+              <div className="second__right"></div>
+            </div>
+          </section>
           <section className="section"></section>
           <section className="section"></section>
           <section className="section"></section>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import LogoImg from "../../img/main_logo.svg";
 import ArrowImg from "../../img/button_down.svg";
 import "./index.scss";
@@ -8,14 +7,14 @@ const NavbarMini = () => {
   return (
     <div className="navbar-mini">
       <div className="navbar-mini__left">
-        <Link to="/">
+        <a href="#section1">
           <img src={LogoImg} alt="tesla_logo" />
-        </Link>
+        </a>
       </div>
       <div className="navbar-mini__right">
-        <Link to="/">
+        <a href="#section1">
           <img src={ArrowImg} alt="arrow_img" />
-        </Link>
+        </a>
       </div>
     </div>
   );
