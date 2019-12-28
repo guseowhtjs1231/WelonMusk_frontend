@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import Navbar from "../../components/Navbar/Navbar";
 import NavbarMini from "../../components/NavbarMini/NavbarMini";
 import InfoHeader from "../../components/InfoHeader/InfoHeader";
@@ -8,7 +8,7 @@ import ButtonDown from "../../components/ButtonDown/ButtonDown";
 import Video from "../../videos/experience-hero-desktop.mp4";
 import Footer from "../../components/Footer/Footer";
 import { TOOLTIPS, ANCHORS } from "./data";
-import ReactFullpage from "@fullpage/react-fullpage";
+import ReactFullpage from "./node_modules/@fullpage/react-fullpage";
 import "./Home.scss";
 
 const Home = () => {
