@@ -17,12 +17,6 @@
   height: 300px;
 
   margin-top: 50%;
-}
-.secondSelectTop {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 30%;
 
   .selectList {
     position: absolute;
@@ -31,37 +25,19 @@
     font-size: 20px;
   }
 }
+.secondSelectTop {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
 
 .colors {
   position: absolute;
   display: flex;
   margin-top: 30px;
-
- 
 }
 
-.colorNames {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  margin-top: 85px;
-  align-items: center;
-
-  .carColorName {
-    padding-left: 12px;
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .colorNames span {
-    font-size: 12px;
-  }
-
-  .vhgka {
-    margin-left: auto;
-    font-size: 13px;
-    color: #666666;
-  }
-}
 .line {
   position: absolute;
   width: 100%;

@@ -10,6 +10,8 @@ import wheel from "../../img/shop/wheel.png";
 import wheel2 from "../../img/shop/wheel2.png";
 import "./index.scss";
 import ColorButton from "../ColorButton";
+import ColorButtoInfo from "../ColorButtonInfo";
+import ColorButtonInfo from "../ColorButtonInfo";
 
 class ShopRightSecond extends React.Component {
   render() {
@@ -27,10 +29,7 @@ class ShopRightSecond extends React.Component {
               <ColorButton color={blue} />
               <ColorButton color={red} />
             </div>
-            <div className="colorNames">
-              <p className="carColorName">Pearl White Multi-Coat</p>
-              <p className="vhgka">포함</p>
-            </div>
+            <ColorButtonInfo name="Pearl White Multi-Coat" vhgka="포함" />
           </div>
           <div className="line"></div>
           <div className="selectBottom">
@@ -41,11 +40,7 @@ class ShopRightSecond extends React.Component {
               <ColorButton color={wheel} />
               <ColorButton color={wheel2} />
             </div>
-            <div className="colorNames">
-              <p className="carColorName">18</p>
-              <span>인치 에어로 휠</span>
-              <p className="vhgka">포함</p>
-            </div>
+            <ColorButtonInfo name="18" span="인치 에어로 휠" vhgka="포함" />
           </div>
         </div>
       </div>

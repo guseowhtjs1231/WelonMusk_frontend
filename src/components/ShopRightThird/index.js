@@ -4,6 +4,8 @@ import * as React from "react";
 import purewhite from "../../img/shop/purewhite.png";
 import pureblack from "../../img/shop/pureblack.png";
 import "./index.scss";
+import ColorButton from "../ColorButton";
+import ColorButtonInfo from "../ColorButtonInfo";
 
 class ShopRightThird extends React.Component {
   render() {
@@ -15,21 +17,10 @@ class ShopRightThird extends React.Component {
               <span>인테리어 선택하기</span>
             </div>
             <div className="colorOptions">
-              <div className="paddingBlock">
-                <div className="colorBorder">
-                  <img className="color" src={pureblack}></img>
-                </div>
-              </div>
-              <div className="paddingBlock">
-                <div className="colorBorder">
-                  <img className="color" src={purewhite}></img>
-                </div>
-              </div>
+              <ColorButton color={pureblack} />
+              <ColorButton color={purewhite} />
             </div>
-            <div className="colorNames">
-              <p className="carColorName">All Black</p>
-              <p className="vhgka">포함</p>
-            </div>
+            <ColorButtonInfo name="All Black" vhgka="포함" />
           </div>
           <div className="textLorder">
             <p>기본사항:</p>
