@@ -1,0 +1,15 @@
+.navChild {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 72px;
+  border-bottom: 4px solid #007fff;
+  top: 26px;
+
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,99 @@
+.mainRightThird {
+  overflow-x: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  right: 1px;
+  height: 90vh;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.selectThird {
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  margin-top: 30%;
+}
+.selectTopThird {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 20%;
+  margin-left: 8%;
+
+  .selectList {
+    position: absolute;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
+
+.colorOptions {
+  position: absolute;
+  display: flex;
+  margin-top: 30px;
+
+  .paddingBlock {
+    padding-left: 7px;
+  }
+  .colorBorder {
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #007fff;
+    justify-content: center;
+  }
+
+  .color {
+    position: absolute;
+    margin-top: 3.5px;
+    width: 47px;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.colorNames {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin-top: 85px;
+  align-items: center;
+
+  .carColorName {
+    padding-left: 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .vhgka {
+    margin-left: auto;
+    font-size: 13px;
+    color: #666666;
+  }
+}
+
+.textLorder {
+  position: relative;
+  width: 75%;
+  height: 100vh;
+  margin-left: 8%;
+  ul {
+    width: 100%;
+  }
+
+  p {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  li {
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: gray;
+  }
+}

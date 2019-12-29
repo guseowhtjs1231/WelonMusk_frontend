@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Shop from "./pages/Shop/Shop";
+import Shop from "./pages/Shop";
+import ShopSecond from "./pages/Shop/ShopSecond";
+import ShopThird from "./pages/Shop/ShopThird";
+import ShopFourth from "./pages/Shop/ShopFourth";
 
 const Routes = () => {
   return (
@@ -9,6 +12,9 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/shop" component={Shop} />
+        <Route path="/shop2" component={ShopSecond} />
+        <Route path="/shop3" component={ShopThird} />
+        <Route path="/shop4" component={ShopFourth} />
       </Switch>
     </Router>
   );
