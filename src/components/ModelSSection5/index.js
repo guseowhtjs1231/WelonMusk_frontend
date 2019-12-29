@@ -2,6 +2,7 @@ import React from "react";
 import NavbarMiniBlack from "../NavbarMiniBlack";
 import Video from "../../videos/models_bg_fifth.mp4";
 import DetailsAndOrder from "../DetailsAndOrder";
+import ButtonDownBlack from "../ButtonDownBlack";
 import "./index.scss";
 
 const ModelSSection5 = () => {
@@ -77,6 +78,7 @@ const ModelSSection5 = () => {
           </div>
         </div>
       </div>
+      <ButtonDownBlack section="#section6" />
     </>
   );
 };
