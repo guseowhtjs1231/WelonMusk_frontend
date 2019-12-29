@@ -19,6 +19,43 @@ const ModelSSection5 = () => {
             loop
             muted
           ></video>
+          <div className="top__info-outer">
+            <div className="top__info">
+              <div className="box max-range">
+                <div className="top">
+                  <div>
+                    <span className="txt-big">360°</span>
+                  </div>
+                </div>
+                <div className="bottom">
+                  <p>후방, 측방 및 전방 카메라가 최고의 가시성 제공</p>
+                </div>
+              </div>
+              <div className="divider"></div>
+              <div className="box zero-to-hundred">
+                <div className="top">
+                  <div>
+                    <span className="txt-big">160</span>
+                    <span className="txt-small">m</span>
+                  </div>
+                </div>
+                <div className="bottom">
+                  <p>전방 레이더가 원거리 물체에 대한 장거리 탐지 제공</p>
+                </div>
+              </div>
+              <div className="divider"></div>
+              <div className="box max-speed">
+                <div className="top">
+                  <div>
+                    <span className="txt-big">울트라소닉 센서</span>
+                  </div>
+                </div>
+                <div className="bottom">
+                  주변 차량 감지를 통한 잠재적 충돌 방지 및 주차 보조
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="fifth__bottom">
           <div className="bottom__contents">
