@@ -4,6 +4,7 @@ import ModelSSection1 from "../../components/ModelSSection1";
 import ModelSSection2 from "../../components/ModelSSection2";
 import ModelSSection3 from "../../components/ModelSSection3";
 import ModelSSection4 from "../../components/ModelSSection4";
+import ModelSSection5 from "../../components/ModelSSection5";
 import { TOOLTIPS, ANCHORS } from "./data";
 import "../../styles/common.scss";
 import "./index.scss";
@@ -30,7 +31,9 @@ const ModelS = () => (
           <section className="section models__fourth">
             <ModelSSection4 />
           </section>
-          <section className="section"></section>
+          <section className="section models__fifth">
+            <ModelSSection5 />
+          </section>
           <section className="section"></section>
           <section className="section"></section>
           <section className="section"></section>
