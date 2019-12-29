@@ -1,0 +1,26 @@
+.button-down {
+  position: absolute;
+  width: 20px;
+  bottom: 3%;
+  left: 50%;
+  animation: jump 2s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-12px);
+  }
+  30% {
+    transform: translateY(3px);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
