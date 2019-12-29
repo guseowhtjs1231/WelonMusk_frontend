@@ -1,0 +1,29 @@
+.navbar-mini {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+
+  .navbar-mini__left {
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .navbar-mini__right {
+    width: 22px;
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+      transform: rotate(180deg);
+    }
+  }
+}
