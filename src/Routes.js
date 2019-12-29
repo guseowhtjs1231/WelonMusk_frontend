@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import ModelS from "./pages/ModelS";
 import Shop from "./pages/Shop";
 import ShopSecond from "./pages/Shop/ShopSecond";
 import ShopThird from "./pages/Shop/ShopThird";
@@ -11,6 +12,7 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/models" component={ModelS} />
         <Route path="/shop" component={Shop} />
         <Route path="/shop2" component={ShopSecond} />
         <Route path="/shop3" component={ShopThird} />

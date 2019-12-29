@@ -1,0 +1,10 @@
+.main-header {
+  text-align: center;
+  padding-top: 90px;
+}
+
+button {
+  &:focus {
+    outline: 0;
+  }
+}
