@@ -8,6 +8,7 @@ import ModelSSection5 from "../../components/ModelSSection5";
 import ModelSSection6 from "../../components/ModelSSection6";
 import ModelSSection7 from "../../components/ModelSSection7";
 import ModelSSection8 from "../../components/ModelSSection8";
+import ModelSSection9 from "../../components/ModelSSection9";
 import { TOOLTIPS, ANCHORS } from "./data";
 import "../../styles/common.scss";
 import "./index.scss";
@@ -46,7 +47,9 @@ const ModelS = () => (
           <section className="section models__eighth">
             <ModelSSection8 />
           </section>
-          <section className="section"></section>
+          <section className="section models__ninth">
+            <ModelSSection9 />
+          </section>
         </ReactFullpage.Wrapper>
       );
     }}
