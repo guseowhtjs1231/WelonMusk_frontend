@@ -1,0 +1,70 @@
+.models__eighth {
+  .eighth__inner-sections {
+    height: 100%;
+    background-color: black;
+    display: flex;
+
+    .eighth__left {
+      height: 100%;
+      width: 50%;
+      margin: 0 10px;
+
+      .left__car-img {
+        margin-top: 80px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../img//ModelS/models_bg_eighth.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .eighth__right {
+      height: 100%;
+      width: 50%;
+      color: white;
+      padding-top: 100px;
+
+      .right__spec-info {
+        background-color: black;
+        height: 100%;
+        width: 475px;
+        display: flex;
+        flex-direction: column;
+
+        .spec__header {
+          font-size: 28px;
+          margin-bottom: 20px;
+        }
+
+        .spec__btn-container {
+          display: flex;
+          margin-bottom: 30px;
+
+          .btn-left-container {
+            width: 100%;
+            margin-right: 10px;
+          }
+          .btn-right-container {
+            width: 100%;
+            margin-left: 10px;
+          }
+        }
+
+        .spec__specs {
+          width: 100%;
+          display: flex;
+
+          .specs__left {
+            width: 100%;
+            margin-right: 10px;
+          }
+          .specs__right {
+            width: 100%;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
