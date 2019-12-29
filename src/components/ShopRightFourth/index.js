@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import "./index.scss";
+import RightThirdChild from "../RightThirdChild";
 
 class ShopRightFourth extends React.Component {
   render() {
@@ -15,45 +16,19 @@ class ShopRightFourth extends React.Component {
               <span>포함</span>
             </div>
             <ul>
-              <li>
-                <span>
-                  주행 중인 차선의 차량 및 보행자에 맞춰 차량의 조향 및 속도
-                  조절과 차량 제동을 할 수 있습니다.
-                </span>
-              </li>
+              <RightThirdChild info="주행 중인 차선의 차량 및 보행자에 맞춰 차량의 조향 및 속도 조절과 차량 제동을 할 수 있습니다." />
             </ul>
             <span className="lorderFont">완전 자율 주행 기능</span>
             <ul>
-              <li>
-                <span>
-                  자동 차선 변경: 고속도로 주행 시 자동으로 차선을 변경합니다.
-                </span>
-              </li>
-              <li>
-                <span>
-                  오토파크(Autopark): 평행 및 직각 주차 공간을 감지합니다.
-                </span>
-              </li>
-              <li>
-                <span>
-                  서몬(Summon): 차고에서 주차된 차량을 호출할 수 있습니다.
-                </span>
-              </li>
+              <RightThirdChild info="자동 차선 변경: 고속도로 주행 시 자동으로 차선을 변경합니다." />
+              <RightThirdChild info="오토파크(Autopark): 평행 및 직각 주차 공간을 감지합니다." />
+              <RightThirdChild info="서몬(Summon): 차고에서 주차된 차량을 호출할 수 있습니다." />
             </ul>
             <p>올해 출시 예정:</p>
             <ul>
-              <li>
-                <span>
-                  내비게이트 온 오토파일럿: 차로와 저속 추행 차량 추월 등을
-                  포함한 고속도로 진입로 및 진출 차선에서 자동 주행합니다.
-                </span>
-              </li>
-              <li>
-                <span>교통 신호등 및 정지 표지판을 인지하여 작동합니다.</span>
-              </li>
-              <li>
-                <span>시내에서 자동 주행합니다.</span>
-              </li>
+              <RightThirdChild info="내비게이트 온 오토파일럿: 차로와 저속 추행 차량 추월 등을 포함한 고속도로 진입로 및 진출 차선에서 자동 주행합니다." />
+              <RightThirdChild info="교통 신호등 및 정지 표지판을 인지하여 작동합니다." />
+              <RightThirdChild info="시내에서 자동 주행합니다." />
             </ul>
           </div>
           <div className="buttonPadding">
