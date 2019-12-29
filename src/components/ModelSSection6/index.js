@@ -28,7 +28,7 @@ const ModelSSection6 = () => {
                 <div className="top">
                   <div>
                     <span className="txt-big">
-                      <i class="fas fa-wifi"></i>
+                      <i className="fas fa-wifi"></i>
                     </span>
                   </div>
                 </div>
