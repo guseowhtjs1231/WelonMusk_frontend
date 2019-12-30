@@ -12,23 +12,26 @@ class ModelSSection8 extends React.Component {
 
     this.state = {
       performance: true,
-      longRange: false
+      longRange: !performance
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = id => {
-    let newMode = this.state;
+    let newMode = { ...this.state };
 
+    // id === 1  -->  performance 버튼이 클릭됨
     if (id === 1 && !newMode.performance) {
       newMode.performance = true;
-      newMode.longRange = false;
     }
 
+    // id === 2  -->  Long Range 버튼이 클릭됨
     if (id === 2 && !newMode.longRange) {
       newMode.performance = false;
-      newMode.longRange = true;
     }
+
+    /* id = 1, performance = false --> performance = true */
+    /* id = 2, performance = true --> performance = false */
 
     this.setState(newMode);
   };
