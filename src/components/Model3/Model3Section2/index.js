@@ -1,8 +1,8 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import DetailsAndOrder from "../DetailsAndOrder";
-import ButtonDownBlack from "../ButtonDownBlack";
-import Ratings from "../Ratings";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import ButtonDownBlack from "../../ButtonDownBlack";
+import Ratings from "../../Ratings";
 import { RATINGS } from "./data";
 import "./index.scss";
 

@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../Navbar";
-import InfoHeader from "../InfoHeader";
-import InfoSubHeader from "../InfoSubHeader";
-import ButtonDownWhite from "../ButtonDownWhite";
-import OuterFrame from "../../img/ModelS/speedometer/outerframe.svg";
+import Navbar from "../../Navbar";
+import InfoHeader from "../../InfoHeader";
+import InfoSubHeader from "../../InfoSubHeader";
+import ButtonDownWhite from "../../ButtonDownWhite";
+import OuterFrame from "../../../img/ModelS/speedometer/outerframe.svg";
 import { MODEL3_INFO } from "./data";
-import "../../styles/common.scss";
+import "../../../styles/common.scss";
 import "./index.scss";
 
 const Model3Section1 = () => {

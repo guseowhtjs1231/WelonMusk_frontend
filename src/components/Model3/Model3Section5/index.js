@@ -1,8 +1,8 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import ButtonDownWhite from "../ButtonDownWhite";
-import DetailsAndOrder from "../DetailsAndOrder";
-import Video from "../../videos/model3_bg_fifth.mp4";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import ButtonDownWhite from "../../ButtonDownWhite";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import Video from "../../../videos/model3_bg_fifth.mp4";
 import "./index.scss";
 
 const Model3Section5 = () => {

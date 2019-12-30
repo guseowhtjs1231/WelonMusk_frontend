@@ -2,36 +2,25 @@ import React from "react";
 import NavbarMiniWhite from "../NavbarMiniWhite";
 import DetailsAndOrder from "../DetailsAndOrder";
 import ButtonDownBlack from "../ButtonDownBlack";
-import Video from "../../videos/model3_bg_seventh.mp4";
-import CarImg from "../../img/ModelS/models_seventh_car_white.svg";
 import "./index.scss";
 
-const Model3Section7 = () => {
+const ModelSSection6 = () => {
   return (
     <>
       <NavbarMiniWhite />
-      <div className="seventh__inner-sections">
-        <div className="seventh__top">
-          <video
-            className="bg-vid"
-            data-src={Video}
-            type="video/mp4"
-            autoPlay
-            data-keepplaying
-            loop
-            muted
-          ></video>
+      <div className="sixth__inner-sections">
+        <div className="sixth__top">
           <div className="top__info-outer">
             <div className="top__info">
               <div className="box max-range">
                 <div className="top">
                   <div>
-                    <span className="txt-big">15</span>
+                    <span className="txt-big">17</span>
                     <span className="txt-small">인치</span>
                   </div>
                 </div>
                 <div className="bottom">
-                  <p>지속적으로 업데이트 되는 터치스크린 디스플레이</p>
+                  <p>지속적으로 향상되는 거대한 터치스크린 디스플레이</p>
                 </div>
               </div>
               <div className="divider"></div>
@@ -54,17 +43,19 @@ const Model3Section7 = () => {
               <div className="box max-speed">
                 <div className="top">
                   <div>
-                    <img src={CarImg} alt="carimg" />
+                    <span className="txt-big">804</span>
+                    <span className="txt-small">리터</span>
                   </div>
                 </div>
                 <div className="bottom">
-                  넓은 글래스 루프로 여유로운 헤드룸 및 UV 보호 제공
+                  동급 최고의 적재 공간으로 일반적인 SUV 차량보다 많은 적재 공간
+                  제공
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="seventh__bottom">
+        <div className="sixth__bottom">
           <div className="bottom__contents">
             <div className="contents__left">
               <div className="left__top">
@@ -77,18 +68,19 @@ const Model3Section7 = () => {
             </div>
             <div className="contents__right">
               <p>
-                Model 3의 내부는 다른 차량과 다릅니다. 스마트폰을 키로 사용하고
-                중앙의 15인치 터치스크린에서 모든 운전자 컨트롤에 액세스할 수
-                있습니다. 풀 글래스 루프가 전면에서 후면까지 덮어서 모든 좌석에
-                개방감을 제공합니다.
+                Model S에는 동급 최고의 적재 공간, 성인 최대 5명이 착석할 수
+                있는 시트 및 거대한 17인치 터치스크린이 장착되어 있습니다. 고급
+                음향 엔지니어링으로 녹음 스튜디오에 필적할 사운드 다이내믹을
+                제공하며 글래스 루프는 모든 탑승자에게 넓은 실내 경험을
+                제공합니다.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <ButtonDownBlack section="#section8" />
+      <ButtonDownBlack section="#section7" />
     </>
   );
 };
 
-export default Model3Section7;
+export default ModelSSection6;

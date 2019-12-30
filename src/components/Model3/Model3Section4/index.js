@@ -1,8 +1,8 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import DetailsAndOrder from "../DetailsAndOrder";
-import ButtonDownBlack from "../ButtonDownBlack";
-import WeatherIcon from "../../img/Model3/weather-icon.svg";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import ButtonDownBlack from "../../ButtonDownBlack";
+import WeatherIcon from "../../../img/Model3/weather-icon.svg";
 import "./index.scss";
 
 const Model3Section4 = () => {
