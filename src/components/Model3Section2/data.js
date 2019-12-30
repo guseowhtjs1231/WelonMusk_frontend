@@ -7,7 +7,7 @@ export const RATINGS = [
   {
     category: "탑승 인원",
     side: "정면",
-    rating: 5
+    rating: 3
   },
   {
     category: "앞좌석",
@@ -17,7 +17,7 @@ export const RATINGS = [
   {
     category: "운전자",
     side: "전체",
-    rating: 5
+    rating: 2
   },
   {
     category: "뒷좌석",
@@ -27,6 +27,6 @@ export const RATINGS = [
   {
     category: "차량전복",
     side: "",
-    rating: 5
+    rating: 1
   }
 ];

@@ -1,6 +1,8 @@
 import React from "react";
 import Model3Section1 from "../../components/Model3Section1";
 import Model3Section2 from "../../components/Model3Section2";
+import Model3Section3 from "../../components/Model3Section3";
+import Model3Section4 from "../../components/Model3Section4";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { TOOLTIPS, ANCHORS } from "./data";
 import "./index.scss";
@@ -22,8 +24,12 @@ const Model3 = () => {
             <section className="section model3__second">
               <Model3Section2 />
             </section>
-            <section className="section"></section>
-            <section className="section"></section>
+            <section className="section model3__third">
+              <Model3Section3 />
+            </section>
+            <section className="section model3__fourth">
+              <Model3Section4 />
+            </section>
             <section className="section"></section>
             <section className="section"></section>
             <section className="section"></section>
