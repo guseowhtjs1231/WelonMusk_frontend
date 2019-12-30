@@ -1,0 +1,29 @@
+.mainRight {
+  overflow: auto;
+  overflow-x: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  right: 1px;
+  margin-top: 50px;
+  height: 100vh;
+}
+.mainRightItem {
+  position: fixed;
+  width: 27%;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.itemTop {
+  margin-bottom: 10px;
+
+  p {
+    font-size: 19px;
+  }
+  a {
+    margin-bottom: 20px;
+  }
+}
+
+

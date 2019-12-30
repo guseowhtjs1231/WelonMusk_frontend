@@ -1,0 +1,13 @@
+.Lastli {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+  border: solid black;
+
+  .span2 {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,33 @@
+.mainLeft {
+  margin-top: 75px;
+  position: fixed;
+  display: flex;
+  width: 73%;
+  height: 100vh;
+  border-right: 1px solid #e6e6e6;
+  z-index: 99;
+  background-color: #faf9fa;
+  flex-direction: column;
+}
+
+.video {
+  height: 100vh;
+}
+.explanationBlock {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 10%;
+
+  .explanationName {
+    font-size: 20px;
+  }
+
+  .explanation {
+    width: 74%;
+    font-size: 13px;
+    color: #666666;
+  }
+}
