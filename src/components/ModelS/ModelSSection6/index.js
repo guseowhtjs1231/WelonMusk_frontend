@@ -1,7 +1,7 @@
 import React from "react";
-import NavbarMiniWhite from "../NavbarMiniWhite";
-import DetailsAndOrder from "../DetailsAndOrder";
-import ButtonDownBlack from "../ButtonDownBlack";
+import NavbarMiniWhite from "../../NavbarMiniWhite";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import ButtonDownBlack from "../../ButtonDownBlack";
 import "./index.scss";
 
 const ModelSSection6 = () => {

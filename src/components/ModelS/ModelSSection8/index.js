@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import NavbarMiniWhite from "../NavbarMiniWhite";
-import SpecsButton from "../SpecsButton";
-import SpecList from "../SpecList";
-import ButtonDownWhite from "../ButtonDownWhite";
+import NavbarMiniWhite from "../../NavbarMiniWhite";
+import SpecsButton from "../../SpecsButton";
+import SpecList from "../../SpecList";
+import ButtonDownWhite from "../../ButtonDownWhite";
 import { SPECS_PERFORMANCE, SPECS_LONGRANGE } from "./data";
 import "./index.scss";
 

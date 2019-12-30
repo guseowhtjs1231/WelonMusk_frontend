@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import Footer from "../Footer";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import Footer from "../../Footer";
 import "./index.scss";
 
 const ModelSSection9 = () => {
