@@ -1,0 +1,52 @@
+.mainRightThird {
+  overflow-x: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  right: 1px;
+  height: 90vh;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.selectThird {
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  margin-top: 30%;
+  .selectList {
+    position: absolute;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
+.selectTopThird {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 20%;
+  margin-left: 8%;
+}
+
+.colorOptions {
+  position: absolute;
+  display: flex;
+  margin-top: 30px;
+}
+
+.textLorder {
+  position: relative;
+  width: 90%;
+  height: 100vh;
+  margin-left: 3%;
+  ul {
+    width: 100%;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+}
