@@ -1,0 +1,105 @@
+.model3__first {
+  background-image: url("../../img/Model3/model3_bg_first.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+
+  .model3__first__inner {
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+
+    .main-header {
+      flex: 1;
+    }
+  }
+
+  .main-vehicle-info-outer {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-vehicle-info {
+    color: white;
+    margin: auto;
+    width: 640px;
+    height: 84px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-right: 1px solid white;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      &.btn-order-now {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        button {
+          padding: 10px;
+          width: 100%;
+          border-radius: 50px;
+          border: 3px white solid;
+          background: none;
+          color: white;
+
+          &:hover {
+            cursor: pointer;
+            transform: translateY(-1px);
+          }
+
+          &:focus {
+            outline: 0;
+          }
+
+          &:active {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+
+    .top {
+      display: flex;
+      height: 34px;
+
+      .txt-big {
+        font-size: 28px;
+      }
+
+      .txt-small {
+        font-size: 24px;
+      }
+
+      .speedometer {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+
+    .bottom {
+      font-size: 12px;
+      margin-top: 10px;
+      color: white;
+      text-align: center;
+    }
+  }
+}
