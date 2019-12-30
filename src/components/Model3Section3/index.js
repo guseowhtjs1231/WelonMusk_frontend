@@ -6,7 +6,7 @@ import ButtonDownBlack from "../ButtonDownBlack";
 import OuterFrame from "../../img/ModelS/speedometer/outerframe.svg";
 import "./index.scss";
 
-const ModelSSection5 = () => {
+const Model3Section3 = () => {
   return (
     <>
       <NavbarMiniBlack />
@@ -86,9 +86,9 @@ const ModelSSection5 = () => {
           </div>
         </div>
       </div>
-      <ButtonDownBlack section="#section6" />
+      <ButtonDownBlack section="#section4" />
     </>
   );
 };
 
-export default ModelSSection5;
+export default Model3Section3;

@@ -5,7 +5,7 @@ import ButtonDownBlack from "../ButtonDownBlack";
 import WeatherIcon from "../../img/Model3/weather-icon.svg";
 import "./index.scss";
 
-const ModelSSection4 = () => {
+const Model3Section4 = () => {
   return (
     <>
       <NavbarMiniBlack />
@@ -79,4 +79,4 @@ const ModelSSection4 = () => {
   );
 };
 
-export default ModelSSection4;
+export default Model3Section4;
