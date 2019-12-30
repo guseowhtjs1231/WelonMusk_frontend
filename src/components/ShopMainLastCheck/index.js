@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-const ShopMainLastLongCheck = props => {
+const ShopMainLastCheck = props => {
   return (
     <div className="agreeCheck">
       <label className="checkBoxContainer">
@@ -17,4 +17,4 @@ const ShopMainLastLongCheck = props => {
   );
 };
 
-export default ShopMainLastLongCheck;
+export default ShopMainLastCheck;

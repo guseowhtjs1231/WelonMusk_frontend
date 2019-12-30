@@ -10,7 +10,7 @@ class ShopRightFourth extends React.Component {
       <div className="mainRightFourth">
         <div className="selectFourth">
           <div className="lorderText">
-            <div>
+            <div className="lorderTop">
               <span className="lorderFont">오토파일럿</span>
               <span className="miniLine"></span>
               <span>포함</span>

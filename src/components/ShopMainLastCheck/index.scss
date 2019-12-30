@@ -4,13 +4,28 @@
   display: flex;
   padding-bottom: 10px;
   margin-top: 20px;
-  border: solid black;
+  align-items: center;
+  .checkBoxContainer {
+    margin: 0px;
+    display: flex;
+    position: relative;
+    width: 4%;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+  }
 
   a {
     color: black;
   }
 
   span {
+    position: relative;
+    left: 1;
     font-size: 14px;
     color: #a2a3a5;
   }
