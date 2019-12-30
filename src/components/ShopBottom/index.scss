@@ -1,0 +1,77 @@
+.mainBottom {
+  position: fixed;
+  display: flex;
+  background-color: #333333;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+.bottomItems {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+}
+
+.price {
+  position: relative;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+.priceLeft {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 141px;
+  height: 70px;
+  border-right: 1px solid #efefef;
+  select {
+    font-size: 13px;
+    padding-right: 10px;
+    background-color: #333333;
+    width: 60%;
+    height: 40px;
+    color: white;
+    border: none;
+  }
+
+  span {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+}
+
+.priceCenter {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 480px;
+  height: 70px;
+  border-right: 1px solid #efefef;
+  margin-left: 170px;
+}
+
+.emptyBlock {
+  margin-left: auto;
+  margin-right: 400px;
+  width: 454px;
+  height: 70px;
+}
+
+.priceRight {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  right: 1px;
+  width: 23%;
+  height: 70px;
+  margin-right: 35px;
+}
+.linkColor {
+  color: white;
+  font-size: 14px;
+}
