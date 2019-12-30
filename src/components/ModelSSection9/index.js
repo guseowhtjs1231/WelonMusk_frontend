@@ -1,7 +1,5 @@
 import React from "react";
 import NavbarMiniBlack from "../NavbarMiniBlack";
-import InfoHeader from "../InfoHeader";
-import OrderNowButton from "../OrderNowButton";
 import Footer from "../Footer";
 import "./index.scss";
 
