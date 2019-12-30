@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.scss";
 
-const SpecsButton = ({ text, onClick, isClicked }) => {
+const SpecsButton = ({ id, text, onClick, isClicked }) => {
   return (
     <button
-      onClick={onClick}
+      onClick={() => onClick(id)}
       className={`btn-specs ${isClicked ? "clicked" : ""}`}
     >
       {text}
