@@ -3,9 +3,14 @@ import RatingsItem from "../RatingsItem";
 import "./index.scss";
 
 const Ratings = ({ data }) => {
-  const RatingsItems = data.map(el => {
+  const RatingsItems = data.map((el, index) => {
     return (
-      <RatingsItem category={el.category} side={el.side} rating={el.rating} />
+      <RatingsItem
+        key={index}
+        category={el.category}
+        side={el.side}
+        rating={el.rating}
+      />
     );
   });
 

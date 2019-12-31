@@ -8,6 +8,7 @@ import ShopSecond from "./pages/Shop/ShopSecond";
 import ShopThird from "./pages/Shop/ShopThird";
 import ShopFourth from "./pages/Shop/ShopFourth";
 import ShopLast from "./pages/Shop/ShopLast";
+import Modal from "../src/components/Modal";
 
 const Routes = () => {
   return (
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/shop3" component={ShopThird} />
         <Route path="/shop4" component={ShopFourth} />
         <Route path="/shop5" component={ShopLast} />
+        <Route path="/modal" component={Modal} />
       </Switch>
     </Router>
   );
