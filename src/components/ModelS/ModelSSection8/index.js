@@ -11,34 +11,19 @@ class ModelSSection8 extends React.Component {
     super(props);
 
     this.state = {
-      performance: true,
-      longRange: !performance
+      mode: "performance"
     };
+
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = id => {
-    let newMode = { ...this.state };
-
-    // id === 1  -->  performance 버튼이 클릭됨
-    if (id === 1 && !newMode.performance) {
-      newMode.performance = true;
-    }
-
-    // id === 2  -->  Long Range 버튼이 클릭됨
-    if (id === 2 && !newMode.longRange) {
-      newMode.performance = false;
-    }
-
-    /* id = 1, performance = false --> performance = true */
-    /* id = 2, performance = true --> performance = false */
-
-    this.setState(newMode);
-  };
+  handleClick(id) {
+    this.setState({ mode: id });
+  }
 
   render() {
-    const { performance, longRange } = this.state;
-    const type = performance ? SPECS_PERFORMANCE : SPECS_LONGRANGE;
+    const { mode } = this.state;
+    const type = mode === "performance" ? SPECS_PERFORMANCE : SPECS_LONGRANGE;
 
     return (
       <>
@@ -53,18 +38,18 @@ class ModelSSection8 extends React.Component {
               <div className="spec__btn-container">
                 <div className="btn-left-container">
                   <SpecsButton
-                    id={1}
+                    id="performance"
                     text="PERFORMANCE"
                     onClick={this.handleClick}
-                    isClicked={performance}
+                    isClicked={mode === "performance"}
                   />
                 </div>
                 <div className="btn-right-container">
                   <SpecsButton
-                    id={2}
+                    id="long"
                     text="LONG RANGE"
                     onClick={this.handleClick}
-                    isClicked={longRange}
+                    isClicked={mode === "long"}
                   />
                 </div>
               </div>
