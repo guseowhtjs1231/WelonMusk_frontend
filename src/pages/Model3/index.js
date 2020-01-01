@@ -7,6 +7,7 @@ import Model3Section5 from "../../components/Model3/Model3Section5";
 import Model3Section6 from "../../components/Model3/Model3Section6";
 import Model3Section7 from "../../components/Model3/Model3Section7";
 import Model3Section8 from "../../components/Model3/Model3Section8";
+import Model3Section9 from "../../components/Model3/Model3Section9";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { TOOLTIPS, ANCHORS } from "./data";
 import "./index.scss";
@@ -46,7 +47,9 @@ const Model3 = () => {
             <section className="section model3__eighth">
               <Model3Section8 />
             </section>
-            <section className="section"></section>
+            <section className="section model3__ninth">
+              <Model3Section9 />
+            </section>
           </ReactFullpage.Wrapper>
         );
       }}

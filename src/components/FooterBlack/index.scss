@@ -1,4 +1,4 @@
-.Footer {
+.FooterBlack {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -6,9 +6,10 @@
   flex-direction: column;
   justify-content: space-around;
   height: 140px;
-  background-color: white;
+  background-color: black;
   text-align: center;
   padding: 20px 0;
+  color: white;
 
   .Footer__links {
     display: flex;
