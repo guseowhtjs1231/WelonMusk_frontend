@@ -1,10 +1,10 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import ButtonDownBlack from "../ButtonDownBlack";
-import DetailsAndOrder from "../DetailsAndOrder";
-import img5 from "../../img/ModelS/models_seventh_5.svg";
-import imgCp from "../../img/ModelS/models_seventh_cd2.png";
-import imgCar from "../../img/ModelS/models_seventh_car.svg";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import ButtonDownBlack from "../../ButtonDownBlack";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import img5 from "../../../img/ModelS/models_seventh_5.svg";
+import imgCp from "../../../img/ModelS/models_seventh_cd2.png";
+import imgCar from "../../../img/ModelS/models_seventh_car.svg";
 import "./index.scss";
 
 const ModelSSection7 = () => {

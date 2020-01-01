@@ -1,7 +1,7 @@
 import React from "react";
-import NavbarMiniWhite from "../NavbarMiniWhite";
-import DetailsAndOrder from "../DetailsAndOrder";
-import ButtonDownBlack from "../ButtonDownBlack";
+import NavbarMiniWhite from "../../NavbarMiniWhite";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import ButtonDownBlack from "../../ButtonDownBlack";
 import "./index.scss";
 
 const ModelSSection6 = () => {
@@ -28,7 +28,7 @@ const ModelSSection6 = () => {
                 <div className="top">
                   <div>
                     <span className="txt-big">
-                      <i class="fas fa-wifi"></i>
+                      <i className="fas fa-wifi"></i>
                     </span>
                   </div>
                 </div>
