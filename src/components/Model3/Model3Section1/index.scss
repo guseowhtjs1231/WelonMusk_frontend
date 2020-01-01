@@ -36,17 +36,17 @@
 
       &.zero-to-hundred {
         opacity: 0;
-        animation: fadeIn 0.3s ease-out forwards 1s;
+        animation: fadeIn 0.3s ease-out forwards 2s;
       }
 
       &.fuel-efficiency {
         opacity: 0;
-        animation: fadeIn 0.3s ease-out forwards 1.2s;
+        animation: fadeIn 0.3s ease-out forwards 2.3s;
       }
 
       &.drive {
         opacity: 0;
-        animation: fadeIn 0.3s ease-out forwards 1.4s;
+        animation: fadeIn 0.3s ease-out forwards 2.5s;
       }
 
       &:nth-child(1),
@@ -63,7 +63,7 @@
         flex-direction: column;
         justify-content: center;
         opacity: 0;
-        animation: fadeIn 0.3s ease-out forwards 1.6s;
+        animation: fadeIn 0.3s ease-out forwards 2.8s;
 
         button {
           padding: 10px;

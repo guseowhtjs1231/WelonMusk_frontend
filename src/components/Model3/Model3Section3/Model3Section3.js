@@ -3,7 +3,7 @@ import NavbarMiniBlack from "../../NavbarMiniBlack";
 import Video from "../../../videos/model3_bg_third.mp4";
 import DetailsAndOrder from "../../DetailsAndOrder";
 import ButtonDownBlack from "../../ButtonDownBlack";
-import OuterFrame from "../../../img/ModelS/speedometer/outerframe.svg";
+import OuterFrame from "../../../img/Model3/speedometer.svg";
 import "./index.scss";
 
 const Model3Section3 = () => {
