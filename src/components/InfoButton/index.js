@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.scss";
 
-const InfoButton = ({ text }) => {
+const InfoButton = ({ text, id }) => {
   return (
-    <div className="main_button-container">
+    <div id={id} className="main_button-container">
       <button className="main_button">{text}</button>
     </div>
   );
