@@ -1,6 +1,23 @@
 .info-header {
   font-size: 40px;
   color: white;
+  opacity: 0;
+  animation: moveInRight 1s ease-out forwards 1.5s;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #header__model3 {

@@ -7,7 +7,7 @@ const NavbarMini = () => {
   return (
     <div className="navbar-mini">
       <div className="navbar-mini__left">
-        <a href="#section1">
+        <a href="/">
           <img src={LogoImg} alt="tesla_logo" />
         </a>
       </div>

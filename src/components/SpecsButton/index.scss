@@ -1,0 +1,27 @@
+.btn-specs {
+  min-height: 38px;
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid #7f7f7f;
+  background: none;
+  color: #7f7f7f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+  &.clicked {
+    color: white;
+    border: 3px solid white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    border: 3px solid white;
+  }
+
+  &:focus {
+    color: white;
+    border: 3px solid white;
+  }
+}

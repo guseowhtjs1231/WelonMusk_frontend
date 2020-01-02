@@ -1,0 +1,27 @@
+.btn-compare {
+  min-height: 38px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: #222222;
+  color: #7f7f7f;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+  &.clicked {
+    color: white;
+    border: 3px solid white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    border: 3px solid white;
+  }
+
+  &:focus {
+    color: white;
+    border: 3px solid white;
+  }
+}

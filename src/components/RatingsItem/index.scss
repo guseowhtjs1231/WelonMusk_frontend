@@ -1,0 +1,33 @@
+.ratings-item {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+  .item__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .left__top {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .left__bottom {
+      font-size: 10px;
+      color: #97989b;
+    }
+  }
+
+  .item__right {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+
+    .right__stars {
+      letter-spacing: 7px;
+    }
+  }
+}
