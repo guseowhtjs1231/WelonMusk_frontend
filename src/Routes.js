@@ -10,7 +10,7 @@ import ShopThird from "./pages/Shop/ShopThird";
 import ShopFourth from "./pages/Shop/ShopFourth";
 import ShopLast from "./pages/Shop/ShopLast";
 import Signin from "./pages/Signin/index";
-
+import Signup from "./pages/Signup/index";
 const Routes = () => {
   return (
     <Router>
@@ -25,6 +25,7 @@ const Routes = () => {
         <Route path="/shop4" component={ShopFourth} />
         <Route path="/shop5" component={ShopLast} />
         <Route path="/signin" component={Signin} />
+        <Route path="/signup" component={Signup} />
       </Switch>
     </Router>
   );
