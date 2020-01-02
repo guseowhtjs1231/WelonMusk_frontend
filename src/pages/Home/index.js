@@ -54,8 +54,10 @@ const Home = () => {
             <section className="section home__third">
               <NavbarMiniWhite />
               <div className="main-header">
-                <InfoHeader text="모든 전력을 공급" />
-                <InfoSubHeader text="태양광과 Powerwall" />
+                <div className="header__top">
+                  <InfoHeader text="모든 전력을 공급" />
+                  <InfoSubHeader text="태양광과 Powerwall" />
+                </div>
                 <InfoButton text="자세히 알아보기" />
               </div>
               <ButtonDownWhite section="#section4" />
@@ -63,8 +65,10 @@ const Home = () => {
             <section className="section home__last">
               <NavbarMiniWhite />
               <div className="main-header">
-                <InfoSubHeader text="Tesla" />
-                <InfoHeader text="Model Y" />
+                <div className="header__top">
+                  <InfoSubHeader text="Tesla" />
+                  <InfoHeader text="Model Y" />
+                </div>
                 <InfoButton text="자세히 알아보기" />
               </div>
               <Footer />

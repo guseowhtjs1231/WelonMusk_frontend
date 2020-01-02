@@ -45,4 +45,11 @@
     transform: rotate(180deg);
     color: black;
   }
+
+  @media (max-width: 500px) {
+    .navbar-center,
+    .btn-login {
+      display: none;
+    }
+  }
 }
