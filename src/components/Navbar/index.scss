@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding: 0 20px;
+  padding: 0 30px;
   font-size: 14px;
+  color: white;
 
   a {
     text-decoration: none;
@@ -17,6 +18,39 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    justify-content: space-between;
+
+    .btn-login {
+      margin-right: 35px;
+    }
+  }
+
+  .fas {
+    position: fixed;
+    top: 18px;
+    right: 30px;
+    transition: all 0.4s;
+    z-index: 1000;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .icon-black {
+    transform: rotate(180deg);
+    color: black;
+  }
+
+  @media (max-width: 500px) {
+    .navbar-center,
+    .btn-login {
+      display: none;
     }
   }
 }

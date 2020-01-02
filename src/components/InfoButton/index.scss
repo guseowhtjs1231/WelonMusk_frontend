@@ -24,3 +24,16 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .main_button-container {
+    .main_button {
+      width: 80%;
+      height: 45px;
+    }
+  }
+}
+
+#header__orderbtn {
+  transform: translateY(-200%);
+}
