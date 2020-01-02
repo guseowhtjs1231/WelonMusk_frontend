@@ -1,9 +1,9 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import DetailsAndOrder from "../DetailsAndOrder";
-import ButtonDownBlack from "../ButtonDownBlack";
-import OuterFrame from "../../img/ModelS/speedometer/outerframe.svg";
-import "../../styles/common.scss";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import ButtonDownBlack from "../../ButtonDownBlack";
+import OuterFrame from "../../../img/ModelS/speedometer/outerframe.svg";
+import "../../../styles/common.scss";
 import "./index.scss";
 
 const ModelSSection3 = () => {

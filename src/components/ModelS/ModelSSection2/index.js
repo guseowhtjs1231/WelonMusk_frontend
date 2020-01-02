@@ -1,8 +1,8 @@
 import React from "react";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import DetailsAndOrder from "../DetailsAndOrder";
-import ButtonDownBlack from "../ButtonDownBlack";
-import "../../styles/common.scss";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import DetailsAndOrder from "../../DetailsAndOrder";
+import ButtonDownBlack from "../../ButtonDownBlack";
+import "../../../styles/common.scss";
 import "./index.scss";
 
 const index = () => {

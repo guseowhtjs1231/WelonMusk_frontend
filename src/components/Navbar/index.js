@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="navbar-center">
         <Link to="/models">MODEL S</Link>
         <Link to="/model3">MODEL 3</Link>
-        <Link to="/">MODEL X</Link>
+        <Link to="/modelx">MODEL X</Link>
         <Link to="/">MODEL Y</Link>
         <Link to="/">CYBERTRUCK</Link>
         <Link to="/">ROADSTER</Link>

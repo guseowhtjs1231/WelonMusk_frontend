@@ -1,8 +1,8 @@
 import React from "react";
-import ButtonDownWhite from "../ButtonDownWhite";
-import NavbarMiniBlack from "../NavbarMiniBlack";
-import Video from "../../videos/models_bg_fourth.mp4";
-import DetailsAndOrder from "../DetailsAndOrder";
+import ButtonDownWhite from "../../ButtonDownWhite";
+import NavbarMiniBlack from "../../NavbarMiniBlack";
+import Video from "../../../videos/models_bg_fourth.mp4";
+import DetailsAndOrder from "../../DetailsAndOrder";
 import "./index.scss";
 
 const index = () => {
