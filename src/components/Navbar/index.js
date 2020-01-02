@@ -22,7 +22,9 @@ const Navbar = () => {
         <Link to="/">ENERGY</Link>
       </div>
       <div className="navbar-right">
-        <Link to="/">로그인</Link>
+        <Link to="/" className="btn-login">
+          로그인
+        </Link>
         <Link to="/">
           <i className="fas fa-bars"></i>
         </Link>

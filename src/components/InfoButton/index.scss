@@ -25,31 +25,15 @@
   }
 }
 
-#header__orderbtn {
-  transform: translateY(-200%);
-  // animation: moveButton 10s ease forwards 1s;
+@media (max-width: 500px) {
+  .main_button-container {
+    .main_button {
+      width: 80%;
+      height: 45px;
+    }
+  }
 }
 
-@keyframes moveButton {
-  0% {
-    transform: translateY(-200%);
-  }
-  10% {
-    transform: translateY(-200%);
-  }
-  20% {
-    transform: translateY(-200%);
-  }
-  40% {
-    transform: translateY(-100%);
-  }
-  60% {
-    transform: translateY(-200%);
-  }
-  80% {
-    transform: translateY(-400%);
-  }
-  100% {
-    transform: translateY(-200%);
-  }
+#header__orderbtn {
+  transform: translateY(-200%);
 }

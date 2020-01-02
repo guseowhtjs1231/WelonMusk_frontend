@@ -19,4 +19,11 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 500px) {
+    .navbar-center,
+    .btn-login {
+      display: none;
+    }
+  }
 }
