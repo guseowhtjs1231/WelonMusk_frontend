@@ -8,7 +8,6 @@ class Layout extends React.Component {
       <div className="Layout">
         <ShopNav />
         {this.props.children}
-        <ShopBottom />
       </div>
     );
   }

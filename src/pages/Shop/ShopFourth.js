@@ -12,6 +12,7 @@ class ShopFourth extends React.Component {
       <Layout>
         <ShopMainFourth></ShopMainFourth>
         <ShopRightFourth></ShopRightFourth>
+        <ShopBottom />
       </Layout>
     );
   }

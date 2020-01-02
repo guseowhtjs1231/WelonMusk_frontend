@@ -1,15 +1,26 @@
-.navChild {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 225px;
-  height: 72px;
-  border-bottom: 4px solid #007fff;
-  top: 26px;
+.shopnav__links {
+  text-decoration: none;
 
-  h2 {
-    font-size: 14px;
-    font-weight: 500;
+  &:visited {
+    color: black;
+  }
+
+  .navChild {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 72px;
+    top: 26px;
+
+    &.isActive {
+      border-bottom: 4px solid #007fff;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 }

@@ -1,10 +1,9 @@
 import React from "react";
 import "./index.scss";
-const ShopNavChild = props => {
+const ShopNavChild = ({ name, isActive }) => {
   return (
-    <li className="navChild">
-      {props.id}
-      <h2>{props.name}</h2>
+    <li className={`navChild ${isActive ? "isActive" : ""}`}>
+      <h2>{name}</h2>
     </li>
   );
 };

@@ -6,13 +6,6 @@ import modelblack1 from "../../img/shop/2.png";
 import modelsilver1 from "../../img/shop/3.png";
 import modelblue1 from "../../img/shop/4.png";
 import modelred1 from "../../img/shop/5.png";
-import white from "../../img/shop/white.png";
-import black from "../../img/shop/black.png";
-import silver from "../../img/shop/silver.png";
-import blue from "../../img/shop/blue.png";
-import red from "../../img/shop/red.png";
-import wheel from "../../img/shop/wheel.png";
-import wheel2 from "../../img/shop/wheel2.png";
 import ColorButton from "../../components/ColorButton";
 import ColorButtonInfo from "../../components/ColorButtonInfo";
 import modelwhite from "../../img/shop/model3.png";
@@ -22,6 +15,7 @@ import modelblue from "../../img/shop/modelblue.png";
 import modelred from "../../img/shop/modelred.png";
 import "./second.scss";
 import Layout from "./Layout/Layout";
+import ShopBottom from "../../components/ShopBottom";
 
 class ShopSecond extends React.Component {
   constructor(props) {
@@ -44,25 +38,57 @@ class ShopSecond extends React.Component {
       selectId: 1,
       id: 4,
       isLoading: true,
-      isLoading2: true
+      isLoading2: true,
+      footerPrice: {}
     };
   }
 
-  handleClick = id => {
+  handleClick = async id => {
     this.setState({ selectId: id });
+    await fetch("http://10.58.7.74:8000/price/color/2", {
+      method: "POST",
+      body: JSON.stringify({
+        color_id: id
+      })
+    }).then(res => console.log("COLOR POST Success!", res));
+
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res => this.setState({ footerPrice: res.price }));
   };
 
   handleClickTwo = id => {
     this.setState({ id });
+    fetch("http://10.58.7.74:8000/price/wheel/2", {
+      method: "POST",
+      body: JSON.stringify({
+        wheel_id: id
+      })
+    }).then(res => console.log("WHEEL POST Success!", res));
   };
 
   componentDidMount() {
     fetch("http://10.58.7.74:8000/price/color/2")
       .then(res => res.json())
       .then(res => this.setState({ carColor: res.data, isLoading: false }));
-    fetch(" http://10.58.7.74:8000/price/wheel/2")
+    fetch("http://10.58.7.74:8000/price/wheel/2")
       .then(res => res.json())
       .then(res => this.setState({ wheel: res.data, isLoading2: false }));
+    fetch("http://10.58.7.74:8000/price/color/2", {
+      method: "POST",
+      body: JSON.stringify({
+        color_id: 1
+      })
+    }).then(res => console.log("Initial COLOR POST Success!", res));
+    fetch("http://10.58.7.74:8000/price/wheel/2", {
+      method: "POST",
+      body: JSON.stringify({
+        wheel_id: 4
+      })
+    }).then(res => console.log("Initial WHEEL POST Success!", res));
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res => this.setState({ footerPrice: res.price }));
   }
 
   render() {
@@ -73,7 +99,8 @@ class ShopSecond extends React.Component {
       id,
       isLoading,
       carImages,
-      isLoading2
+      isLoading2,
+      footerPrice
     } = this.state;
 
     if (isLoading || isLoading2) {
@@ -209,6 +236,10 @@ class ShopSecond extends React.Component {
             </div>
           </div>
         </div>
+        <ShopBottom
+          expectedPrice={footerPrice.expected_price}
+          savingPrice={footerPrice.saving_price}
+        />
       </Layout>
     );
   }

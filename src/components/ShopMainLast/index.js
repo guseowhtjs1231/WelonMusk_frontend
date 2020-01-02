@@ -16,16 +16,7 @@ class ShopMainLast extends React.Component {
         </form>
         <div className="reviewPage">
           <span className="input">계정 세부 사항 입력</span>
-          <div className="radioBoxs">
-            <label className="radioBoxContainer">
-              <input type="radio" className="radioBox"></input>
-              <span>개인</span>
-            </label>
-            <label className="radioBoxContainer">
-              <input type="radio" className="radioBox"></input>
-              <span>기업</span>
-            </label>
-          </div>
+
           <div className="longLine"></div>
           <div className="infoFirst">
             <ShopMainLastText info="성명 (한글)" />

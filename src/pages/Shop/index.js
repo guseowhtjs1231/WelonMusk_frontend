@@ -9,6 +9,7 @@ import carImage2 from "../../img/shop/model3.png";
 import ShopMainChild from "../../components/ShopMainChild";
 import RightChildName from "../../components/RightChildName";
 import RightChildButton from "../../components/RightChildButton";
+import ShopBottom from "../../components/ShopBottom";
 
 class Shop extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class Shop extends React.Component {
     this.state = {
       selectedId: 0,
       data: [],
+      footerPrice: {},
       isLoading: true
     };
   }
@@ -24,13 +26,40 @@ class Shop extends React.Component {
     fetch("http://10.58.7.74:8000/price/model/2")
       .then(res => res.json())
       .then(res => this.setState({ data: res.data, isLoading: false }));
+
+    fetch("http://10.58.7.74:8000/price/engine/2", {
+      method: "POST",
+      body: JSON.stringify({
+        type_id: 1
+      })
+    }).then(res => console.log("Initial POST Success!", res));
+
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res => this.setState({ footerPrice: res.price }));
   }
 
-  handleClick = id => {
+  handleClick = async id => {
     this.setState({ selectedId: id });
+
+    await fetch("http://10.58.7.74:8000/price/engine/2", {
+      method: "POST",
+      body: JSON.stringify({
+        type_id: id + 1
+      })
+    });
+
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res =>
+        this.setState({ footerPrice: res.price }, () =>
+          console.log("FOOTER GET: ", this.state.footerPrice)
+        )
+      );
   };
+
   render() {
-    const { selectedId, data, isLoading } = this.state;
+    const { selectedId, data, isLoading, footerPrice } = this.state;
 
     if (isLoading) {
       return <p>Loading..!</p>;
@@ -115,6 +144,10 @@ class Shop extends React.Component {
             </div>
           </div>
         </div>
+        <ShopBottom
+          expectedPrice={footerPrice.expected_price}
+          savingPrice={footerPrice.saving_price}
+        />
       </Layout>
     );
   }
