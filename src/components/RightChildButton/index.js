@@ -1,10 +1,15 @@
 import React from "react";
 import "./index.scss";
-const RightChildButton = props => {
+const RightChildButton = ({ id, name, price, onClick, selected }) => {
   return (
-    <button type="button" className="priceBox">
-      <p className="priceBoxName">{props.name}</p>
-      <p className="priceBoxMoney">￦{props.price}</p>
+    <button
+      type="button"
+      className={`priceBox ${selected ? "selected" : ""}`}
+      id={id}
+      onClick={() => onClick(id)}
+    >
+      <p className="priceBoxName">{name}</p>
+      <p className="priceBoxMoney">₩{price}</p>
     </button>
   );
 };

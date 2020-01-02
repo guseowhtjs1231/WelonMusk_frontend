@@ -7,6 +7,18 @@ import "./index.scss";
 import ShopNavChild from "../ShopNavChild";
 
 class ShopNav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navTab: [
+        { id: "1.", name: "자동차" },
+        { id: "2.", name: "외부" },
+        { id: "3.", name: "인테리어" },
+        { id: "4.", name: "오토파일럿" },
+        { id: "5.", name: "결제" }
+      ]
+    };
+  }
   render() {
     return (
       <div className="nav">
@@ -18,11 +30,9 @@ class ShopNav extends React.Component {
           </div>
           <div className="packageOptions">
             <ul>
-              <ShopNavChild id="1." name="자동차" />
-              <ShopNavChild id="2." name="외부" />
-              <ShopNavChild id="3." name="인테리어" />
-              <ShopNavChild id="4." name="오토파일럿" />
-              <ShopNavChild id="5." name="결제" />
+              {this.state.navTab.map(el => {
+                return <ShopNavChild id={el.id} name={el.name} />;
+              })}
             </ul>
           </div>
           <div className="country">

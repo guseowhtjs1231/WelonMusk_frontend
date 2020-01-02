@@ -3,21 +3,15 @@
 import * as React from "react";
 import ShopMainThird from "../../components/ShopMainThird";
 import ShopRightThird from "../../components/ShopRightThird";
-import ShopNav from "../../components/ShopNav";
-import ShopBottom from "../../components/ShopBottom";
-import "./index.css";
-
+import "./index.scss";
+import Layout from "./Layout/Layout";
 class ShopThird extends React.Component {
   render() {
     return (
-      <div className="Layout">
-        <ShopNav></ShopNav>
-        <div className="main">
-          <ShopMainThird></ShopMainThird>
-          <ShopRightThird></ShopRightThird>
-        </div>
-        <ShopBottom></ShopBottom>
-      </div>
+      <Layout>
+        <ShopMainThird></ShopMainThird>
+        <ShopRightThird></ShopRightThird>
+      </Layout>
     );
   }
 }

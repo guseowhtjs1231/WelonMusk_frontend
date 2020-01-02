@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "id": "1",
+      "color": "white",
+      "name": "Pearl White Multi-Cost",
+      "money": "포함"
+    },
+    { "id": 2, "color": "black", "name": "Solid Black", "money": "₩1,286,000" },
+    {
+      "id": 3,
+      "color": "silver",
+      "name": "Midnight Silver Metallic",
+      "money": "₩1,286,000"
+    },
+    {
+      "id": 4,
+      "color": "blue",
+      "name": "Deep Blue Metallic",
+      "money": "₩1,286,000"
+    },
+    { "id": 5, "color": "red", "name": "Red Multi-Coat", "money": "₩2,571,000" }
+  ],
+  "wheel": [
+    {
+      "id": 1,
+      "color": "wheel",
+      "size": "18",
+      "name": "인치 에어로 휠",
+      "money": "₩2,571,000"
+    },
+    {
+      "id": 2,
+      "color": "wheel2",
+      "size": "19",
+      "name": "인치 스포츠 휠",
+      "money": "₩2,571,000"
+    }
+  ]
+}

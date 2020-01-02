@@ -8,7 +8,7 @@ class ShopMainThird extends React.Component {
   render() {
     return (
       <div className="mainLeft">
-        <img src={compositor}></img>
+        <img src={compositor} alt="car"></img>
       </div>
     );
   }

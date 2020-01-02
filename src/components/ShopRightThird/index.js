@@ -9,7 +9,17 @@ import ColorButtonInfo from "../ColorButtonInfo";
 import RightThirdChild from "../RightThirdChild";
 
 class ShopRightThird extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      insideColor: [
+        { id: 1, color: pureblack, name: "All Black", money: "₩1,286,000" },
+        { id: 2, color: purewhite, name: "Black&White", money: "₩1,286,000" }
+      ]
+    };
+  }
   render() {
+    const liArr = [];
     return (
       <div className="mainRightThird">
         <div className="selectThird">
@@ -18,8 +28,9 @@ class ShopRightThird extends React.Component {
               <span>인테리어 선택하기</span>
             </div>
             <div className="colorOptions">
-              <ColorButton color={pureblack} />
-              <ColorButton color={purewhite} />
+              {this.state.insideColor.map(el => {
+                return <ColorButton id={el.id} color={el.color} />;
+              })}
             </div>
             <ColorButtonInfo name="All Black" vhgka="₩  1,286,000" />
           </div>
