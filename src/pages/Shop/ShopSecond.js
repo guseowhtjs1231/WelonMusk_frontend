@@ -27,142 +27,96 @@ class ShopSecond extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      carColor: [
-        {
-          id: 0,
-          color: white,
-          name: "Pearl White Multi-Coat",
-          price: "포함",
-          carImage: modelwhite
-        },
-        {
-          id: 1,
-          color: black,
-          name: "Solid Black",
-          price: "1,286,000",
-          carImage: modelblack
-        },
-        {
-          id: 2,
-          color: silver,
-          name: "Midnight Silver Metallic",
-          price: "1,286,000",
-          carImage: modelsilver
-        },
-        {
-          id: 3,
-          color: blue,
-          name: "Deep Blue Metallic",
-          price: "1,286,000",
-          carImage: modelblue
-        },
-        {
-          id: 4,
-          color: red,
-          name: "Red Multi-Coat",
-          price: "2,571,000",
-          carImage: modelred
-        },
-        {
-          id: 5,
-          color: white,
-          name: "Pearl White Multi-Coat",
-          price: "포함",
-          carImage: modelwhite1
-        },
-        {
-          id: 6,
-          color: black,
-          name: "Solid Black",
-          price: "1,286,000",
-          carImage: modelblack1
-        },
-        {
-          id: 7,
-          color: silver,
-          name: "Midnight Silver Metallic",
-          price: "1,286,000",
-          carImage: modelsilver1
-        },
-        {
-          id: 8,
-          color: blue,
-          name: "Deep Blue Metallic",
-          price: "1,286,000",
-          carImage: modelblue1
-        },
-        {
-          id: 9,
-          color: red,
-          name: "Red Multi-Coat",
-          price: "2,571,000",
-          carImage: modelred1
-        }
-      ],
-      wheel: [
-        {
-          id: 0,
-          size: "18",
-          span: "인치 에어로 휠",
-          price: "포함",
-          image: wheel
-        },
-        {
-          id: 1,
-          size: "19",
-          span: "인치 스포츠 휠",
-          price: "1,929,000",
-          image: wheel2
-        }
+      carColor: [],
+      wheel: [],
+      carImages: [
+        modelwhite,
+        modelblack,
+        modelsilver,
+        modelblue,
+        modelred,
+        modelwhite1,
+        modelblack1,
+        modelsilver1,
+        modelblue1,
+        modelred1
       ],
       selectId: 0,
-      id: 0
+      id: 0,
+      isLoading: true,
+      isLoading2: true
     };
   }
+
   handleClick = id => {
     this.setState({ selectId: id });
   };
+
   handleClickTwo = id => {
     this.setState({ id: id });
   };
 
+  componentDidMount() {
+    fetch("http://10.58.7.74:8000/price/color/2")
+      .then(res => res.json())
+      .then(res => this.setState({ carColor: res.data, isLoading: false }));
+    fetch(" http://10.58.7.74:8000/price/wheel/2")
+      .then(res => res.json())
+      .then(res => this.setState({ wheel: res.data, isLoading2: false }));
+  }
+
   render() {
-    const { carColor, selectId, wheel, id } = this.state;
-    let w = carColor[0];
-    let q = wheel[0];
-    if (id === 0) {
-      if (selectId === 0) {
-        w = carColor[0];
-        q = wheel[0];
-      } else if (selectId === 1) {
-        w = carColor[1];
-        q = wheel[0];
+    const {
+      carColor,
+      selectId,
+      wheel,
+      id,
+      isLoading,
+      carImages,
+      isLoading2
+    } = this.state;
+
+    if (isLoading || isLoading2) {
+      return <div>Loading...</div>;
+    }
+
+    let selectedColor = carColor[0];
+    let selectedWheel = wheel[0];
+    let imageIndex = 0;
+
+    if (id === 4) {
+      if (selectId === 1) {
+        selectedColor = carColor[0];
+        selectedWheel = wheel[0];
       } else if (selectId === 2) {
-        w = carColor[2];
-        q = wheel[0];
+        selectedColor = carColor[1];
+        selectedWheel = wheel[0];
       } else if (selectId === 3) {
-        w = carColor[3];
-        q = wheel[0];
+        selectedColor = carColor[2];
+        selectedWheel = wheel[0];
       } else if (selectId === 4) {
-        w = carColor[4];
-        q = wheel[0];
+        selectedColor = carColor[3];
+        selectedWheel = wheel[0];
+      } else if (selectId === 5) {
+        selectedColor = carColor[4];
+        selectedWheel = wheel[0];
       }
-    } else if (id === 1) {
-      if (selectId === 0) {
-        w = carColor[5];
-        q = wheel[1];
-      } else if (selectId === 1) {
-        w = carColor[6];
-        q = wheel[1];
+    } else if (id === 5) {
+      if (selectId === 1) {
+        selectedColor = carColor[0];
+        selectedWheel = wheel[1];
       } else if (selectId === 2) {
-        w = carColor[7];
-        q = wheel[1];
+        selectedColor = carColor[1];
+        selectedWheel = wheel[1];
       } else if (selectId === 3) {
-        w = carColor[8];
-        q = wheel[1];
+        selectedColor = carColor[2];
+        selectedWheel = wheel[1];
       } else if (selectId === 4) {
-        w = carColor[9];
-        q = wheel[1];
+        selectedColor = carColor[3];
+        selectedWheel = wheel[1];
+      } else if (selectId === 5) {
+        selectedColor = carColor[4];
+        selectedWheel = wheel[1];
       }
     }
 
@@ -171,7 +125,7 @@ class ShopSecond extends React.Component {
         <div className="main">
           <div
             className="mainLeft"
-            style={{ backgroundImage: `url(${w.carImage}` }}
+            style={{ backgroundImage: `url(${carImages[imageIndex]}` }}
           ></div>
         </div>
         <div className="mainRightSecond">
@@ -183,36 +137,40 @@ class ShopSecond extends React.Component {
               <div className="colors">
                 <ColorButton
                   onClick={this.handleClick}
-                  select={selectId === 0}
-                  id={carColor[0].id}
-                  color={carColor[0].color}
-                />
-                <ColorButton
-                  onClick={this.handleClick}
                   select={selectId === 1}
-                  id={carColor[1].id}
-                  color={carColor[1].color}
+                  id={carColor[0].color_id}
+                  color={carColor[0].img_url}
                 />
                 <ColorButton
                   onClick={this.handleClick}
                   select={selectId === 2}
-                  id={carColor[2].id}
-                  color={carColor[2].color}
+                  id={carColor[1].color_id}
+                  color={carColor[1].img_url}
                 />
                 <ColorButton
                   onClick={this.handleClick}
                   select={selectId === 3}
-                  id={carColor[3].id}
-                  color={carColor[3].color}
+                  id={carColor[2].color_id}
+                  color={carColor[2].img_url}
                 />
                 <ColorButton
                   onClick={this.handleClick}
                   select={selectId === 4}
-                  id={carColor[4].id}
-                  color={carColor[4].color}
+                  id={carColor[3].color_id}
+                  color={carColor[3].img_url}
+                />
+                <ColorButton
+                  onClick={this.handleClick}
+                  select={selectId === 5}
+                  id={carColor[4].color_id}
+                  color={carColor[4].img_url}
                 />
               </div>
-              <ColorButtonInfo id={w.id} name={w.name} vhgka={w.price} />
+              <ColorButtonInfo
+                id={selectedColor.color_id}
+                name={selectedColor.color_name}
+                vhgka={selectedColor.color_price}
+              />
             </div>
             <div className="line"></div>
             <div className="selectBottom">
@@ -222,22 +180,21 @@ class ShopSecond extends React.Component {
               <div className="colors">
                 <ColorButton
                   onClick={this.handleClickTwo}
-                  select={id === 0}
-                  color={wheel[0].image}
-                  id={wheel[0].id}
+                  select={id === 4}
+                  color={wheel[0].img_url}
+                  id={wheel[0].wheel_id}
                 />
                 <ColorButton
                   onClick={this.handleClickTwo}
-                  select={id === 1}
-                  color={wheel[1].image}
-                  id={wheel[1].id}
+                  select={id === 5}
+                  color={wheel[1].img_url}
+                  id={wheel[1].wheel_id}
                 />
               </div>
               <ColorButtonInfo
-                id={q.id}
-                name={q.size}
-                span={q.span}
-                vhgka={q.price}
+                id={selectedWheel.wheel_id}
+                name={selectedWheel.wheel_name}
+                vhgka={selectedWheel.price}
               />
             </div>
           </div>

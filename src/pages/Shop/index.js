@@ -21,7 +21,7 @@ class Shop extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://10.58.0.62:8000/price/model/2")
+    fetch("http://10.58.7.74:8000/price/model/2")
       .then(res => res.json())
       .then(res => this.setState({ data: res.data, isLoading: false }));
   }
@@ -51,11 +51,9 @@ class Shop extends React.Component {
         <div className="main">
           <div
             className="mainLeft"
-            style={
-              {
-                // backgroundImage: `url(${type.image}`
-              }
-            }
+            style={{
+              backgroundImage: `url(${type.img_url}`
+            }}
           >
             <ul className="carPerformance">
               <ShopMainChild
