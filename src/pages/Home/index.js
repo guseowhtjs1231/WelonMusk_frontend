@@ -12,33 +12,6 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "./index.scss";
 
 const Home = () => {
-  // const [mouseDownPosX, setMouseDownPosX] = useState(0);
-  // const [mouseUpPosX, setMouseUpPosX] = useState(0);
-  // const [bgPos, setBgPos] = useState(0);
-
-  // const positionStyle = {
-  //   "-1": { backgroundSize: "200%", backgroundPosition: "0% 55%" },
-  //   "0": { backgroundSize: "200%", backgroundPosition: "51% 55%" },
-  //   "1": { backgroundSize: "200%", backgroundPosition: "100% 55%" }
-  // };
-
-  // const onMouseDown = e => {
-  //   setMouseDownPosX(e.clientX);
-  // };
-
-  // const onMouseUp = e => {
-  //   setMouseUpPosX(e.clientX);
-  //   if (mouseDownPosX > mouseUpPosX) {
-  //     if (bgPos === -1 || bgPos === 0) {
-  //       setBgPos(bgPos + 1);
-  //     }
-  //   } else if (mouseDownPosX < mouseUpPosX) {
-  //     if (bgPos === 0 || bgPos === 1) {
-  //       setBgPos(bgPos - 1);
-  //     }
-  //   }
-  // };
-
   return (
     <ReactFullpage
       verticalCentered={false}
@@ -50,16 +23,13 @@ const Home = () => {
         return (
           <ReactFullpage.Wrapper>
             <section className="section home__first">
-              <div
-                className="home__first__inner"
-                // style={positionStyle[bgPos]}
-                // onMouseDown={onMouseDown}
-                // onMouseUp={onMouseUp}
-              >
+              <div className="home__first__inner">
                 <Navbar />
                 <div className="main-header">
-                  <InfoHeader text="Tesla" />
-                  <InfoButton text="지금 주문하기" />
+                  <InfoHeader id="header__model3" text="Model 3" />
+                  <InfoHeader id="header__models" text="Model S" />
+                  <InfoHeader id="header__modelx" text="Model X" />
+                  <InfoButton id="header__orderbtn" text="지금 주문하기" />
                 </div>
                 <ButtonDownWhite section="#section2" />
               </div>
