@@ -3,7 +3,7 @@ import Navbar from "../../Navbar";
 import InfoHeader from "../../InfoHeader";
 import InfoSubHeader from "../../InfoSubHeader";
 import ButtonDownBlack from "../../ButtonDownBlack";
-import OuterFrame from "../../../img/ModelS/speedometer/outerframe.svg";
+import OuterFrame from "../../../img/ModelS/speedometer/speedometer_black.svg";
 import { MODELS_INFO } from "./data";
 import "../../../styles/common.scss";
 import "./index.scss";
