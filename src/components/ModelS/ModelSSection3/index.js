@@ -2,7 +2,7 @@ import React from "react";
 import NavbarMiniBlack from "../../NavbarMiniBlack";
 import DetailsAndOrder from "../../DetailsAndOrder";
 import ButtonDownBlack from "../../ButtonDownBlack";
-import OuterFrame from "../../../img/ModelS/speedometer/outerframe.svg";
+import OuterFrame from "../../../img/Model3/speedometer.svg";
 import "../../../styles/common.scss";
 import "./index.scss";
 

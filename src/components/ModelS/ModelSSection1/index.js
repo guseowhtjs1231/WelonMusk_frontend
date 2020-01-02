@@ -1,14 +1,40 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import Navbar from "../../Navbar";
 import InfoHeader from "../../InfoHeader";
 import InfoSubHeader from "../../InfoSubHeader";
 import ButtonDownBlack from "../../ButtonDownBlack";
-import OuterFrame from "../../../img/ModelS/speedometer/outerframe.svg";
+import OuterFrame from "../../../img/ModelS/speedometer.svg";
 import { MODELS_INFO } from "./data";
 import "../../../styles/common.scss";
 import "./index.scss";
 
 const ModelSSection1 = () => {
+  const num1 = useSpring({
+    config: { duration: 1500 },
+    delay: 2000,
+    number: 2,
+    from: { number: 20 }
+  });
+  const num2 = useSpring({
+    config: { duration: 1800 },
+    delay: 2000,
+    number: 6,
+    from: { number: 0 }
+  });
+  const num3 = useSpring({
+    config: { duration: 1500, delay: 1200 },
+    delay: 2200,
+    number: 804,
+    from: { number: 0 }
+  });
+  const num4 = useSpring({
+    config: { duration: 1800, delay: 1400 },
+    delay: 2200,
+    number: 487,
+    from: { number: 0 }
+  });
+
   return (
     <>
       <Navbar />
@@ -25,7 +51,13 @@ const ModelSSection1 = () => {
                   <img src={OuterFrame} alt="outerframe" />
                 </div>
                 <div>
-                  <span className="txt-big">{MODELS_INFO.zeroToHundred}</span>
+                  <animated.span className="txt-big">
+                    {num1.number.interpolate(number => Math.floor(number))}
+                  </animated.span>
+                  <span className="txt-big">.</span>
+                  <animated.span className="txt-big">
+                    {num2.number.interpolate(number => Math.floor(number))}
+                  </animated.span>
                   <span className="txt-small">초</span>
                 </div>
               </div>
@@ -40,7 +72,9 @@ const ModelSSection1 = () => {
             <div className="box space">
               <div className="top">
                 <div>
-                  <span className="txt-big">{MODELS_INFO.carSpace}</span>
+                  <animated.span className="txt-big">
+                    {num3.number.interpolate(number => Math.floor(number))}
+                  </animated.span>
                   <span className="txt-small">리터</span>
                 </div>
               </div>
@@ -51,7 +85,9 @@ const ModelSSection1 = () => {
             <div className="box fuel-efficiency">
               <div className="top">
                 <div>
-                  <span className="txt-big">{MODELS_INFO.fuelEconomy}</span>
+                  <animated.span className="txt-big">
+                    {num4.number.interpolate(number => Math.floor(number))}
+                  </animated.span>
                   <span className="txt-small">km</span>
                 </div>
               </div>

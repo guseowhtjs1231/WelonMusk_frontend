@@ -1,0 +1,110 @@
+.model3__fourth {
+  .fourth__inner-sections {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .fourth__top {
+      height: 100%;
+      background-image: url("../../../img/Model3/model3_bg_fourth.jpg");
+      background-position: center;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .fourth__info-outer {
+        min-width: 100%;
+        margin-bottom: 60px;
+        color: white;
+      }
+
+      .fourth__info {
+        margin: auto;
+        width: 1024px;
+        height: 84px;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          width: 33%;
+          padding: 0 20px;
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            border-right: 1px solid white;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .top {
+          display: flex;
+          height: 34px;
+
+          .txt-big {
+            font-size: 28px;
+          }
+
+          .txt-small {
+            font-size: 24px;
+          }
+        }
+
+        .bottom {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .fourth__bottom {
+      width: 100%;
+      height: 220px;
+
+      p {
+        margin: 0;
+      }
+
+      .bottom__contents {
+        width: 1024px;
+        height: 100%;
+        margin: auto;
+        padding: 50px 0;
+        display: flex;
+
+        .contents__left {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .left__top {
+            .info__header {
+              font-size: 17px;
+              font-weight: 300;
+            }
+
+            .info__sub-header {
+              font-size: 28px;
+            }
+          }
+        }
+
+        .contents__right {
+          width: 60%;
+
+          p {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
