@@ -41,8 +41,8 @@ class ShopSecond extends React.Component {
         modelblue1,
         modelred1
       ],
-      selectId: 0,
-      id: 0,
+      selectId: 1,
+      id: 4,
       isLoading: true,
       isLoading2: true
     };
@@ -53,7 +53,7 @@ class ShopSecond extends React.Component {
   };
 
   handleClickTwo = id => {
-    this.setState({ id: id });
+    this.setState({ id });
   };
 
   componentDidMount() {
@@ -88,35 +88,45 @@ class ShopSecond extends React.Component {
       if (selectId === 1) {
         selectedColor = carColor[0];
         selectedWheel = wheel[0];
+        imageIndex = 0;
       } else if (selectId === 2) {
         selectedColor = carColor[1];
         selectedWheel = wheel[0];
+        imageIndex = 1;
       } else if (selectId === 3) {
         selectedColor = carColor[2];
         selectedWheel = wheel[0];
+        imageIndex = 2;
       } else if (selectId === 4) {
         selectedColor = carColor[3];
         selectedWheel = wheel[0];
+        imageIndex = 3;
       } else if (selectId === 5) {
         selectedColor = carColor[4];
         selectedWheel = wheel[0];
+        imageIndex = 4;
       }
     } else if (id === 5) {
       if (selectId === 1) {
         selectedColor = carColor[0];
         selectedWheel = wheel[1];
+        imageIndex = 5;
       } else if (selectId === 2) {
         selectedColor = carColor[1];
         selectedWheel = wheel[1];
+        imageIndex = 6;
       } else if (selectId === 3) {
         selectedColor = carColor[2];
         selectedWheel = wheel[1];
+        imageIndex = 7;
       } else if (selectId === 4) {
         selectedColor = carColor[3];
         selectedWheel = wheel[1];
+        imageIndex = 8;
       } else if (selectId === 5) {
         selectedColor = carColor[4];
         selectedWheel = wheel[1];
+        imageIndex = 9;
       }
     }
 
@@ -194,7 +204,7 @@ class ShopSecond extends React.Component {
               <ColorButtonInfo
                 id={selectedWheel.wheel_id}
                 name={selectedWheel.wheel_name}
-                vhgka={selectedWheel.price}
+                vhgka={selectedWheel.wheel_price}
               />
             </div>
           </div>
