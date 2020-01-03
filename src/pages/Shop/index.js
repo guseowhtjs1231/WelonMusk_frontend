@@ -23,18 +23,18 @@ class Shop extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://10.58.7.74:8000/price/model/2")
+    fetch("http://13.209.16.32:8000/price/model/2")
       .then(res => res.json())
       .then(res => this.setState({ data: res.data, isLoading: false }));
 
-    fetch("http://10.58.7.74:8000/price/engine/2", {
+    fetch("http://13.209.16.32:8000/price/engine/2", {
       method: "POST",
       body: JSON.stringify({
         type_id: 1
       })
     }).then(res => console.log("Initial POST Success!", res));
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   }
@@ -42,14 +42,14 @@ class Shop extends React.Component {
   handleClick = async id => {
     this.setState({ selectedId: id });
 
-    await fetch("http://10.58.7.74:8000/price/engine/2", {
+    await fetch("http://13.209.16.32:8000/price/engine/2", {
       method: "POST",
       body: JSON.stringify({
         type_id: id + 1
       })
     });
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res =>
         this.setState({ footerPrice: res.price }, () =>
