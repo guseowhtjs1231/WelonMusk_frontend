@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom";
 import Navbar from "../../Navbar";
 import InfoHeader from "../../InfoHeader";
 import InfoSubHeader from "../../InfoSubHeader";
@@ -89,7 +90,9 @@ const Model3Section1 = () => {
               <div className="bottom">상시 사륜구동</div>
             </div>
             <div className="box btn-order-now">
-              <button>지금 주문하기</button>
+              <Link to="/shop/model3/1">
+                <button>지금 주문하기</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -4,11 +4,11 @@ import "./index.scss";
 
 const OrderNowButton = () => {
   return (
-    <div className="btn-order-now-container">
-      <Link to="/shop">
+    <Link to="/shop/model3/1">
+      <div className="btn-order-now-container">
         <button className="btn-order-now">지금 주문하기</button>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
