@@ -1,5 +1,7 @@
 .paddingBlock {
-  padding-left: 7px;
+  padding-left: 10px;
+  width: 70px;
+  height: 70px;
 
   .colorBorder {
     display: flex;
@@ -7,16 +9,23 @@
     border-radius: 50%;
     width: 54px;
     height: 54px;
-    border: 2px solid #007fff;
+    border: none;
     justify-content: center;
   }
 
   .color {
     position: absolute;
     margin-top: 2px;
-    width: 47px;
-    height: 47px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 45px;
+    height: 45px;
   }
+}
+.select {
+  display: flex;
+  border: 3px solid #007fff;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  justify-content: center;
+  padding-right: 10px;
 }

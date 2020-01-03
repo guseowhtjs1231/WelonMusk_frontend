@@ -1,3 +1,14 @@
+.mainLeft {
+  margin-top: 75px;
+  position: fixed;
+  display: flex;
+  width: 74%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-right: 1px solid #e6e6e6;
+}
+
 .mainRightSecond {
   overflow: auto;
   overflow-x: hidden;
@@ -35,6 +46,7 @@
 .colors {
   position: absolute;
   display: flex;
+  justify-content: space-between;
   margin-top: 30px;
 }
 

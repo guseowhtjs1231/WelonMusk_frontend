@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-
+import { Link } from "react-router-dom";
 class Signin extends React.Component {
   constructor() {
     super();
@@ -71,7 +71,9 @@ class Signin extends React.Component {
             </div>
           </div>
           <div className="make_account">
-            <div className="signup">계정 만들기</div>
+            <Link to="/signup" className="signup">
+              계정 만들기
+            </Link>
           </div>
         </div>
       </div>

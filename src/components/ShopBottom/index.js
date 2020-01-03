@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 import BottomChildPrice from "../BottomChildPrice";
 import BottomChildButton from "../BottomChildButton";
 
@@ -19,8 +20,14 @@ class ShopBottom extends React.Component {
               </select>
             </div>
             <div className="priceCenter">
-              <BottomChildPrice price="48,690,000" cost="연료비 절감 후" />
-              <BottomChildPrice price="53,690,000" cost="연료비 절감 전" />
+              <BottomChildPrice
+                price={this.props.savingPrice}
+                cost="연료비 절감 후"
+              />
+              <BottomChildPrice
+                price={this.props.expectedPrice}
+                cost="연료비 절감 전"
+              />
               <div className="pcRight">
                 <a href="" className="linkColor">
                   예상 결제 가격
@@ -29,7 +36,9 @@ class ShopBottom extends React.Component {
             </div>
 
             <div className="emptyBlock"></div>
-            <BottomChildButton name="다음" />
+            <Link to={this.props.nextPage}>
+              <BottomChildButton name="다음" />
+            </Link>
           </div>
         </div>
       </div>

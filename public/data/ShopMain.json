@@ -1,0 +1,7 @@
+{
+  "performance": [
+    { "number": "352", "km": "km", "drive": "주행 가능 거리" },
+    { "number": "225", "km": "km/h", "drive": "최고속도" },
+    { "number": "5.6", "km": "초", "drive": "0~100 km/h 도달시간" }
+  ]
+}

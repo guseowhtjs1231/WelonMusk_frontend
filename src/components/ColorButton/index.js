@@ -1,10 +1,14 @@
 import React from "react";
 import "./index.scss";
-const ColorButton = props => {
+const ColorButton = ({ id, color, onClick, select }) => {
   return (
-    <div className="paddingBlock">
-      <div className="colorBorder">
-        <img className="color" src={props.color}></img>
+    <div
+      className={`paddingBlock  ${select ? "select" : ""}`}
+      id={id}
+      onClick={() => onClick(id)}
+    >
+      <div className="colorBorder ">
+        <img className="color" src={color} alt="color"></img>
       </div>
     </div>
   );

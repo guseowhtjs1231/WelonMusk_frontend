@@ -38,7 +38,7 @@ class Navbar extends React.Component {
             <Link to="/">ENERGY</Link>
           </div>
           <div className="navbar-right">
-            <Link to="/" className="btn-login">
+            <Link to="/signin" className="btn-login">
               로그인
             </Link>
             <i

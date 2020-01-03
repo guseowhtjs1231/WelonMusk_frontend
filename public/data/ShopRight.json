@@ -1,0 +1,7 @@
+{
+  "price": [
+    { "id": "1", "name": "Standard Range Plus", "money": "₩53,690,000" },
+    { "id": "2", "name": "Long Range", "money": "₩63,690,000" },
+    { "id": "3", "name": "Performance", "money": "₩73,690,000" }
+  ]
+}
