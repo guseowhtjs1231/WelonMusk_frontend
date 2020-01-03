@@ -21,7 +21,7 @@ class ShopLast extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price, isLoading: false }));
   }

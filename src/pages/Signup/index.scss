@@ -1,143 +1,145 @@
-// .body {
-//   // background: radial-gradient(transparent, hsla(0, 0%, 2%, 0.9)), #333 url("https://auth.tesla.com/images/login-semi-hangar.jpg") no-repeat center center fixed;
-//   // background-size: cover;
-//   // width: 100%;
-//   // min-height: 100vh;
+.body {
+  background: radial-gradient(transparent, hsla(0, 0%, 2%, 0.9)),
+    #333 url("https://auth.tesla.com/images/login-semi-hangar.jpg") no-repeat
+      center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 
-//   .head {
-//     padding: 7px;
-//   }
+  .head {
+    padding: 7px;
+  }
 
-//   .signup_body {
-//     width: 533.33px;
-//     margin-left: 50%;
-//     box-sizing: border-box;
+  .signup_body {
+    width: 533.33px;
+    margin-left: 50%;
+    box-sizing: border-box;
 
-//     .move_signin {
-//       background-color: #ffffff;
-//       text-align: center;
-//       color: black;
-//       border-top-left-radius: 16px;
-//       border-top-right-radius: 16px;
-//       line-height: 42px;
-//       height: 42px;
+    .move_signin {
+      background-color: #ffffff;
+      text-align: center;
+      color: black;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      line-height: 42px;
+      height: 42px;
 
-//       .account {
-//         font-size: 12px;
-//         color: #000000;
-//       }
+      .account {
+        font-size: 12px;
+        color: #000000;
+      }
 
-//       .login {
-//         font-size: 12px;
-//         color: #3e6be2;
-//         margin-left: 10px;
-//       }
-//     }
+      .login {
+        font-size: 12px;
+        color: #3e6be2;
+        margin-left: 10px;
+      }
+    }
 
-//     .make_account {
-//       background-color: #eeeeee;
-//       padding: 10px 40px 40px 40px;
-//       border-bottom-left-radius: 16px;
-//       border-bottom-right-radius: 16px;
+    .make_account {
+      background-color: #eeeeee;
+      padding: 10px 40px 40px 40px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
 
-//       h2 {
-//         font-weight: 200;
-//         font-size: 28px;
-//         margin: 15px 0;
-//         text-align: center;
-//       }
+      h2 {
+        font-weight: 200;
+        font-size: 28px;
+        margin: 15px 0;
+        text-align: center;
+      }
 
-//       hr {
-//         margin: 25px 0;
-//         border: 1px solid #dbdbdb;
-//         background-color: #dbdbdb;
-//         height: 1px;
-//       }
+      hr {
+        margin: 25px 0;
+        border: 1px solid #dbdbdb;
+        background-color: #dbdbdb;
+        height: 1px;
+      }
 
-//       .signup_info {
-//         .info {
-//           margin-bottom: 10.5px;
+      .signup_info {
+        .info {
+          margin-bottom: 10.5px;
 
-//           .input {
-//             width: 453.33px;
-//             height: 40px;
-//             padding: 0 12px;
-//             border-radius: 32px;
-//             font-size: 16px;
-//             box-sizing: border-box;
-//             border: 1px solid #dbdbdb;
-//             outline: none;
+          .input {
+            width: 453.33px;
+            height: 40px;
+            padding: 0 12px;
+            border-radius: 32px;
+            font-size: 16px;
+            box-sizing: border-box;
+            border: 1px solid #dbdbdb;
+            outline: none;
 
-//             &:hover {
-//               border: 1px solid #b5b0b0;
-//             }
-//           }
+            &:hover {
+              border: 1px solid #b5b0b0;
+            }
+          }
 
-//           .psw_condition {
-//             font-size: 11.2px;
-//             text-align: center;
-//             color: #4a4a4a;
-//           }
-//         }
-//       }
+          .psw_condition {
+            font-size: 11.2px;
+            text-align: center;
+            color: #4a4a4a;
+          }
+        }
+      }
 
-//       .checkbox_area {
-//         color: #4a4a4a;
-//         font-size: 14px;
-//         position: relative;
-//         margin-bottom: 20px;
+      .checkbox_area {
+        color: #4a4a4a;
+        font-size: 14px;
+        position: relative;
+        margin-bottom: 20px;
 
-//         .checkbox_container {
-//           width: 25px;
-//           height: 25px;
-//           position: absolute;
-//           top: 0;
-//           left: 0;
+        .checkbox_container {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 0;
+          left: 0;
 
-//           .checkbox {
-//             width: 100%;
-//           }
-//         }
+          .checkbox {
+            width: 100%;
+          }
+        }
 
-//         .checkbox_text {
-//           margin: 0 0 0 40px;
+        .checkbox_text {
+          margin: 0 0 0 40px;
 
-//           .consent {
-//             text-decoration: none;
+          .consent {
+            text-decoration: none;
 
-//             &:visited {
-//               color: #3e6be2;
-//             }
-//           }
-//         }
-//       }
+            &:visited {
+              color: #3e6be2;
+            }
+          }
+        }
+      }
 
-//       .do_signup {
-//         button {
-//           width: 100%;
-//           height: 40px;
-//           padding: 0 12px;
-//           border-radius: 32px;
-//           border-color: #3e6be2;
-//           font-size: 0.9em;
-//           margin-bottom: 10.5px;
-//           color: #ffffff;
-//           background-color: #3e6be2;
-//           display: inline-block;
-//         }
-//       }
+      .do_signup {
+        button {
+          width: 100%;
+          height: 40px;
+          padding: 0 12px;
+          border-radius: 32px;
+          border-color: #3e6be2;
+          font-size: 0.9em;
+          margin-bottom: 10.5px;
+          color: #ffffff;
+          background-color: #3e6be2;
+          display: inline-block;
+        }
+      }
 
-//       .agree {
-//         font-size: 14px;
-//         color: #4a4a4a;
-//         text-align: center;
+      .agree {
+        font-size: 14px;
+        color: #4a4a4a;
+        text-align: center;
 
-//         .consent {
-//           &:visited {
-//             color: #3e6be2;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+        .consent {
+          &:visited {
+            color: #3e6be2;
+          }
+        }
+      }
+    }
+  }
+}

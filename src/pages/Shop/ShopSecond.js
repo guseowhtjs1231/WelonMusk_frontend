@@ -45,14 +45,14 @@ class ShopSecond extends React.Component {
 
   handleClick = async id => {
     this.setState({ selectId: id });
-    await fetch("http://10.58.7.74:8000/price/color/2", {
+    await fetch("http://13.209.16.32:8000/price/color/2", {
       method: "POST",
       body: JSON.stringify({
         color_id: id
       })
     }).then(res => console.log("COLOR POST Success!", res));
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   };
@@ -60,42 +60,42 @@ class ShopSecond extends React.Component {
   handleClickTwo = async id => {
     this.setState({ id });
 
-    await fetch("http://10.58.7.74:8000/price/wheel/2", {
+    await fetch("http://13.209.16.32:8000/price/wheel/2", {
       method: "POST",
       body: JSON.stringify({
         wheel_id: id
       })
     }).then(res => console.log("WHEEL POST Success!", res));
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   };
 
   async componentDidMount() {
-    fetch("http://10.58.7.74:8000/price/color/2")
+    fetch("http://13.209.16.32:8000/price/color/2")
       .then(res => res.json())
       .then(res => this.setState({ carColor: res.data, isLoading: false }));
 
-    fetch("http://10.58.7.74:8000/price/wheel/2")
+    fetch("http://13.209.16.32:8000/price/wheel/2")
       .then(res => res.json())
       .then(res => this.setState({ wheel: res.data, isLoading2: false }));
 
-    await fetch("http://10.58.7.74:8000/price/color/2", {
+    await fetch("http://13.209.16.32:8000/price/color/2", {
       method: "POST",
       body: JSON.stringify({
         color_id: 1
       })
     }).then(res => console.log("Initial COLOR POST Success!", res));
 
-    await fetch("http://10.58.7.74:8000/price/wheel/2", {
+    await fetch("http://13.209.16.32:8000/price/wheel/2", {
       method: "POST",
       body: JSON.stringify({
         wheel_id: 4
       })
     }).then(res => console.log("Initial WHEEL POST Success!", res));
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   }

@@ -21,14 +21,14 @@ class ShopFourth extends React.Component {
   }
 
   async componentDidMount() {
-    await fetch("http://10.58.7.74:8000/price/autopilot/2", {
+    await fetch("http://13.209.16.32:8000/price/autopilot/2", {
       method: "POST",
       body: JSON.stringify({
         autopilot: "False"
       })
     });
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price, isLoading: false }));
   }
@@ -37,14 +37,14 @@ class ShopFourth extends React.Component {
     this.setState({ isChecked: !this.state.isChecked });
 
     if (this.state.isChecked) {
-      await fetch("http://10.58.7.74:8000/price/autopilot/2", {
+      await fetch("http://13.209.16.32:8000/price/autopilot/2", {
         method: "POST",
         body: JSON.stringify({
           autopilot: "False"
         })
       });
     } else {
-      await fetch("http://10.58.7.74:8000/price/autopilot/2", {
+      await fetch("http://13.209.16.32:8000/price/autopilot/2", {
         method: "POST",
         body: JSON.stringify({
           autopilot: "True"
@@ -52,7 +52,7 @@ class ShopFourth extends React.Component {
       });
     }
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   };
