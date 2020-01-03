@@ -158,8 +158,12 @@ class Signup extends React.Component {
                 />
               </div>
               <div className="checkbox_text">
-                Tesla의 <a class="consent">개인정보처리방침</a> 에 따른 개인정보
-                수집∙이용 및 국내외 사업자에 대한 개인정보 제공에 동의 합니다.
+                Tesla의
+                <a href="" className="consent">
+                  개인정보처리방침
+                </a>
+                에 따른 개인정보 수집∙이용 및 국내외 사업자에 대한 개인정보
+                제공에 동의 합니다.
               </div>
             </div>
             <div className="checkbox_area">

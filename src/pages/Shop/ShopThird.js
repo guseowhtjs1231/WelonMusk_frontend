@@ -24,18 +24,18 @@ class ShopThird extends React.Component {
   }
 
   async componentDidMount() {
-    fetch("http://10.58.7.74:8000/price/interior/2")
+    fetch("http://13.209.16.32:8000/price/interior/2")
       .then(res => res.json())
       .then(res => this.setState({ insideColor: res.data, isLoading: false }));
 
-    await fetch("http://10.58.7.74:8000/price/interior/2", {
+    await fetch("http://13.209.16.32:8000/price/interior/2", {
       method: "POST",
       body: JSON.stringify({
         interior_id: 6
       })
     });
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   }
@@ -43,14 +43,14 @@ class ShopThird extends React.Component {
   handleClick = async id => {
     this.setState({ target: id });
 
-    await fetch("http://10.58.7.74:8000/price/interior/2", {
+    await fetch("http://13.209.16.32:8000/price/interior/2", {
       method: "POST",
       body: JSON.stringify({
         interior_id: id
       })
     }).then(res => console.log("INTERIOR POST Success!", res));
 
-    fetch("http://10.58.7.74:8000/price/option/2")
+    fetch("http://13.209.16.32:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
   };
