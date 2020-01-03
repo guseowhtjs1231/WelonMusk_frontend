@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 import BottomChildPrice from "../BottomChildPrice";
 import BottomChildButton from "../BottomChildButton";
 
@@ -35,7 +36,9 @@ class ShopBottom extends React.Component {
             </div>
 
             <div className="emptyBlock"></div>
-            <BottomChildButton name="다음" />
+            <Link to={this.props.nextPage}>
+              <BottomChildButton name="다음" />
+            </Link>
           </div>
         </div>
       </div>

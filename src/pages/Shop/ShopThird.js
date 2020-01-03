@@ -18,26 +18,59 @@ class ShopThird extends React.Component {
       insideColor: [],
       interiorImage: [compositor, compositor2],
       target: 6,
+      footerPrice: {},
       isLoading: true
     };
   }
-  componentDidMount() {
+
+  async componentDidMount() {
     fetch("http://10.58.7.74:8000/price/interior/2")
       .then(res => res.json())
       .then(res => this.setState({ insideColor: res.data, isLoading: false }));
+
+    await fetch("http://10.58.7.74:8000/price/interior/2", {
+      method: "POST",
+      body: JSON.stringify({
+        interior_id: 6
+      })
+    });
+
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res => this.setState({ footerPrice: res.price }));
   }
 
-  handleClick = id => {
+  handleClick = async id => {
     this.setState({ target: id });
+
+    await fetch("http://10.58.7.74:8000/price/interior/2", {
+      method: "POST",
+      body: JSON.stringify({
+        interior_id: id
+      })
+    }).then(res => console.log("INTERIOR POST Success!", res));
+
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res => this.setState({ footerPrice: res.price }));
   };
 
   render() {
-    const { insideColor, target, interiorImage, isLoading } = this.state;
+    const {
+      insideColor,
+      target,
+      interiorImage,
+      isLoading,
+      footerPrice
+    } = this.state;
+
     if (isLoading) {
       return <div>Loading...</div>;
     }
+
     let key = insideColor[0];
     let indexNumber = 0;
+
     if (target === 6) {
       key = insideColor[0];
       indexNumber = 0;
@@ -91,7 +124,11 @@ class ShopThird extends React.Component {
             </div>
           </div>
         </div>
-        <ShopBottom />
+        <ShopBottom
+          nextPage="/shop/model3/4"
+          expectedPrice={footerPrice.expected_price}
+          savingPrice={footerPrice.saving_price}
+        />
       </Layout>
     );
   }

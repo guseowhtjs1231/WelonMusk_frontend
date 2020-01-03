@@ -1,5 +1,4 @@
 // @flow strict
-
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import img from "../../img/shop/korea.png";
@@ -10,6 +9,7 @@ import ShopNavChild from "../ShopNavChild";
 class ShopNav extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       navTab: [
         { step: "1", name: "1. 자동차", active: false },
@@ -38,9 +38,10 @@ class ShopNav extends React.Component {
         <div className="carNav">
           <div className="teslaLogo">
             <h1>
-              <img className="Logo" src={tesla} alt="teslalogo"></img>
+              <img className="Logo" src={tesla} alt="teslalogo" />
             </h1>
           </div>
+
           <div className="packageOptions">
             <ul>
               {this.state.navTab.map((el, index) => {

@@ -16,12 +16,14 @@ const Model3Section1 = () => {
     number: 3,
     from: { number: 20 }
   });
+
   const num2 = useSpring({
     config: { duration: 1800 },
     delay: 2000,
     number: 4,
     from: { number: 9 }
   });
+
   const num3 = useSpring({
     config: { duration: 1500, delay: 1200 },
     delay: 2200,

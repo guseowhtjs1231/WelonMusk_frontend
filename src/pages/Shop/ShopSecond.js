@@ -57,35 +57,44 @@ class ShopSecond extends React.Component {
       .then(res => this.setState({ footerPrice: res.price }));
   };
 
-  handleClickTwo = id => {
+  handleClickTwo = async id => {
     this.setState({ id });
-    fetch("http://10.58.7.74:8000/price/wheel/2", {
+
+    await fetch("http://10.58.7.74:8000/price/wheel/2", {
       method: "POST",
       body: JSON.stringify({
         wheel_id: id
       })
     }).then(res => console.log("WHEEL POST Success!", res));
+
+    fetch("http://10.58.7.74:8000/price/option/2")
+      .then(res => res.json())
+      .then(res => this.setState({ footerPrice: res.price }));
   };
 
-  componentDidMount() {
+  async componentDidMount() {
     fetch("http://10.58.7.74:8000/price/color/2")
       .then(res => res.json())
       .then(res => this.setState({ carColor: res.data, isLoading: false }));
+
     fetch("http://10.58.7.74:8000/price/wheel/2")
       .then(res => res.json())
       .then(res => this.setState({ wheel: res.data, isLoading2: false }));
-    fetch("http://10.58.7.74:8000/price/color/2", {
+
+    await fetch("http://10.58.7.74:8000/price/color/2", {
       method: "POST",
       body: JSON.stringify({
         color_id: 1
       })
     }).then(res => console.log("Initial COLOR POST Success!", res));
-    fetch("http://10.58.7.74:8000/price/wheel/2", {
+
+    await fetch("http://10.58.7.74:8000/price/wheel/2", {
       method: "POST",
       body: JSON.stringify({
         wheel_id: 4
       })
     }).then(res => console.log("Initial WHEEL POST Success!", res));
+
     fetch("http://10.58.7.74:8000/price/option/2")
       .then(res => res.json())
       .then(res => this.setState({ footerPrice: res.price }));
@@ -237,6 +246,7 @@ class ShopSecond extends React.Component {
           </div>
         </div>
         <ShopBottom
+          nextPage="/shop/model3/3"
           expectedPrice={footerPrice.expected_price}
           savingPrice={footerPrice.saving_price}
         />
