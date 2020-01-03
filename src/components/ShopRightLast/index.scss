@@ -5,24 +5,31 @@
   flex-direction: column;
   width: 27%;
   right: 1px;
-  height: 100vh;
+  height: 150vh;
   margin-top: 75px;
-  overflow-y: scroll;
 
   .carPayment {
     position: relative;
     display: flex;
-    width: 90%;
-    height: 250vh;
-    overflow-y: hidden;
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
     flex-direction: column;
-    border: 3px solid pink;
-    margin-left: 25px;
 
+    .boxbox {
+      display: flex;
+      flex-direction: column;
+      margin-left: 25px;
+      width: 90%;
+
+      .emptyDiv {
+        width: 100%;
+        height: 100px;
+      }
+    }
     .carImage {
       position: relative;
       width: 100%;
-      border: solid black;
     }
     img {
       position: relative;
@@ -49,8 +56,39 @@
       padding: 0px;
       position: relative;
       width: 100%;
-      border: solid black;
+
       list-style: none;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .paymentBottom {
+      position: relative;
+      width: 100%;
+
+      .paymentBottomItem {
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        .strong {
+          margin-left: auto;
+          font-size: 22px;
+        }
+      }
+      .buttonDiv {
+        width: 32%;
+        font-size: 12px;
+        margin-top: 5px;
+        border-bottom: dotted #666666;
+        color: #666666;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .post {
+      font-size: 12px;
+      color: #393c41;
+      margin-top: 3px;
     }
   }
 }

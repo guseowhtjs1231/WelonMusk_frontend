@@ -5,7 +5,7 @@ const ColorButtonInfo = props => {
     <div className="colorNames">
       <p className="carColorName">{props.name}</p>
       <span>{props.span}</span>
-      <p className="vhgka">{props.vhgka}</p>
+      <p className="vhgka">₩{props.vhgka}</p>
     </div>
   );
 };

@@ -19,8 +19,14 @@ class ShopBottom extends React.Component {
               </select>
             </div>
             <div className="priceCenter">
-              <BottomChildPrice price="48,690,000" cost="연료비 절감 후" />
-              <BottomChildPrice price="53,690,000" cost="연료비 절감 전" />
+              <BottomChildPrice
+                price={this.props.savingPrice}
+                cost="연료비 절감 후"
+              />
+              <BottomChildPrice
+                price={this.props.expectedPrice}
+                cost="연료비 절감 전"
+              />
               <div className="pcRight">
                 <a href="" className="linkColor">
                   예상 결제 가격
