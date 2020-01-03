@@ -145,6 +145,7 @@ class Shop extends React.Component {
           </div>
         </div>
         <ShopBottom
+          nextPage="/shop/model3/2"
           expectedPrice={footerPrice.expected_price}
           savingPrice={footerPrice.saving_price}
         />

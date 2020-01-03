@@ -11,7 +11,7 @@ import ShopFourth from "./pages/Shop/ShopFourth";
 import ShopLast from "./pages/Shop/ShopLast";
 import ShopStep from "./components/ShopStep";
 import Signin from "./pages/Signin/index";
-import Signup from "./pages/Signup/index";
+
 const Routes = () => {
   return (
     <Router>
@@ -21,14 +21,14 @@ const Routes = () => {
         <Route path="/model3" component={Model3} />
         <Route exact path="/shop/model3" component={Shop} />
         <Route path="/modelx" component={ModelX} />
-        <Route path="/shop" component={Shop} />
+        {/* <Route path="/shop" component={Shop} /> */}
         <Route path="/shop2" component={ShopSecond} />
         <Route path="/shop3" component={ShopThird} />
         <Route path="/shop4" component={ShopFourth} />
         <Route path="/shop5" component={ShopLast} />
         <Route path="/shop/model3/:step" component={ShopStep} />
         <Route path="/signin" component={Signin} />
-        <Route path="/signup" component={Signup} />
+        {/* <Route path="/signup" component={Signup} /> */}
       </Switch>
     </Router>
   );

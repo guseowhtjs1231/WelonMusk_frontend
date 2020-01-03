@@ -1,5 +1,3 @@
-// @flow strict
-
 import React from "react";
 import ShopFirst from "../../pages/Shop";
 import ShopSecond from "../../pages/Shop/ShopSecond";
@@ -18,19 +16,19 @@ const ShopStep = ({ match }) => {
   switch (step) {
     case "1":
       return <ShopFirst />;
-      break;
+    // break;
     case "2":
       return <ShopSecond />;
-      break;
+    // break;
     case "3":
       return <ShopThird />;
-      break;
+    // break;
     case "4":
       return <ShopFourth />;
-      break;
+    // break;
     case "5":
       return <ShopLast />;
-      break;
+    // break;
     default:
       return <ShopFirst />;
   }
