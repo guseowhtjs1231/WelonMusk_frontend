@@ -95,6 +95,15 @@ class Signup extends React.Component {
             <hr />
             <div className="signup_info">
               <div className="info firstname">
+                <input className="input" type="text" placeholder="이름" />
+              </div>
+              <div className="info lastname">
+                <input className="input" type="text" placeholder="성" />
+              </div>
+              <div className="info email">
+                <input className="input" type="text" placeholder="이메일주소" />
+              </div>
+              <div className="info password">
                 <input
                   onChange={this.handleFirtstName}
                   className="input"
@@ -140,6 +149,7 @@ class Signup extends React.Component {
             </div>
             <div className="checkbox_area">
               <div className="checkbox_container">
+                <input className="checkbox" type="checkbox" name="consent" />
                 <input
                   onClick={this.handleCheckBox}
                   className="checkbox"
@@ -148,19 +158,18 @@ class Signup extends React.Component {
                 />
               </div>
               <div className="checkbox_text">
-                Tesla의{" "}
-                <a
-                  class="consent"
-                  href="https://www.tesla.com/ko_KR/about/legal?redirect=no"
-                >
+                Tesla의
+                <a href="" className="consent">
                   개인정보처리방침
-                </a>{" "}
+                </a>
                 에 따른 개인정보 수집∙이용 및 국내외 사업자에 대한 개인정보
                 제공에 동의 합니다.
               </div>
             </div>
             <div className="checkbox_area">
               <div className="checkbox_container">
+                <input className="checkbox" type="checkbox" />
+
                 <input
                   onClick={this.handleCheckBox}
                   className="checkbox"
@@ -180,6 +189,8 @@ class Signup extends React.Component {
               </div>
             </div>
             <div className="do_signup">
+              <button>계정만들기</button>
+
               <button onClick={this.postInfo}>계정만들기</button>
             </div>
             <div className="agree">

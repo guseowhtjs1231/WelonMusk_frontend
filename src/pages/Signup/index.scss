@@ -1,7 +1,8 @@
 .body {
+
   background: radial-gradient(transparent, hsla(0, 0%, 2%, 0.9)),
-    #333 url("https://auth.tesla.com/images/login-semi-hangar.jpg") no-repeat
-      center center fixed;
+    #333 url("https://auth.tesla.com/images/login-semi-hangar.jpg") no-repeat center center fixed;
+
   background-size: cover;
   width: 100%;
   min-height: 100vh;
@@ -142,4 +143,6 @@
       }
     }
   }
+
+
 }
