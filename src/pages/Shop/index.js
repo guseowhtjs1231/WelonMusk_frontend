@@ -4,8 +4,6 @@ import * as React from "react";
 import "./index.scss";
 import "./Layout/Layout";
 import Layout from "./Layout/Layout";
-import carImage from "../../img/shop/tesla.png";
-import carImage2 from "../../img/shop/model3.png";
 import ShopMainChild from "../../components/ShopMainChild";
 import RightChildName from "../../components/RightChildName";
 import RightChildButton from "../../components/RightChildButton";
