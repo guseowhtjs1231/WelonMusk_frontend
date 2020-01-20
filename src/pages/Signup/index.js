@@ -103,30 +103,7 @@ class Signup extends React.Component {
               <div className="info email">
                 <input className="input" type="text" placeholder="이메일주소" />
               </div>
-              <div className="info password">
-                <input
-                  onChange={this.handleFirtstName}
-                  className="input"
-                  type="text"
-                  placeholder="이름"
-                />
-              </div>
-              <div className="info lastname">
-                <input
-                  onChange={this.handleLastName}
-                  className="input"
-                  type="text"
-                  placeholder="성"
-                />
-              </div>
-              <div className="info email">
-                <input
-                  onChange={this.handleEmail}
-                  className="input"
-                  type="text"
-                  placeholder="이메일주소"
-                />
-              </div>
+
               <div className="info password">
                 <input
                   onChange={this.handlepassword}
@@ -149,7 +126,7 @@ class Signup extends React.Component {
             </div>
             <div className="checkbox_area">
               <div className="checkbox_container">
-                <input className="checkbox" type="checkbox" name="consent" />
+                {/* <input className="checkbox" type="checkbox" name="consent" /> */}
                 <input
                   onClick={this.handleCheckBox}
                   className="checkbox"
@@ -168,7 +145,7 @@ class Signup extends React.Component {
             </div>
             <div className="checkbox_area">
               <div className="checkbox_container">
-                <input className="checkbox" type="checkbox" />
+                {/* <input className="checkbox" type="checkbox" /> */}
 
                 <input
                   onClick={this.handleCheckBox}
@@ -189,8 +166,6 @@ class Signup extends React.Component {
               </div>
             </div>
             <div className="do_signup">
-              <button>계정만들기</button>
-
               <button onClick={this.postInfo}>계정만들기</button>
             </div>
             <div className="agree">
